@@ -3,6 +3,16 @@ import { Text, View, Image, StyleSheet } from 'react-native'
 import Message from '../../components/Message'
 
 export class Login extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            messageHeading: 'Enter your phone number',
+            messageText: 'An otp will be sent to your mobile',
+            messagePhoneNumber: ''
+        }
+
+    }
+
     render() {
         return (
             <View style={styles.conatianer}>
@@ -10,7 +20,7 @@ export class Login extends Component {
                     <Image
                         source={require('../../../assets/logo.png')} />
                 </View>
-                <Message/>
+                <Message content={this.state} />
                 <Text>Phone Numbergffgndlgdgldbgld</Text>
                 <Text>Phone Numbergffgndlgdgldbgld</Text>
             </View>
@@ -21,19 +31,19 @@ export class Login extends Component {
 export default Login
 
 const styles = StyleSheet.create({
-    conatianer:{
+    conatianer: {
         alignItems: 'center',
         justifyContent: 'center',
         flex: 1,
-        borderColor:'blue',
-        borderWidth:3
+        borderColor: 'blue',
+        borderWidth: 3
 
     },
     logoImage: {
         alignItems: 'center',
         justifyContent: 'center',
         flex: 1,
-        borderColor:'blue',
-        borderWidth:3
+        borderColor: 'blue',
+        borderWidth: 3
     }
 })

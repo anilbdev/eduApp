@@ -2,13 +2,19 @@ import React, { Component } from 'react'
 import { Text, StyleSheet, View } from 'react-native'
 
 export default class Message extends Component {
-    
+    constructor(props) {
+        super(props)
+        console.log(this.props)
+    }
+
+
     render() {
+        const { messageHeading, messageText, messagePhoneNumber } = this.props.content
         return (
             <View style={styles.container}>
-                <Text style={styles.textHeading}> Heading </Text>
-                <Text style={styles.textMessage}>Message</Text>
-                <Text style={styles.messagePhoneNumber}>Phone number</Text>
+                <Text style={styles.messageHeading}>{messageHeading}</Text>
+                <Text style={styles.messageText}>{messageText}</Text>
+                {(messagePhoneNumber == '') ? null : <Text style={styles.messagePhoneNumber}>{messagePhoneNumber}</Text>}
             </View>
         )
     }
@@ -17,19 +23,19 @@ export default class Message extends Component {
 const styles = StyleSheet.create({
     container: {
         backgroundColor: 'yellow',
-        alignItems:'center'
+        alignItems: 'center'
     },
-    textHeading: {
+    messageHeading: {
         fontSize: 20,
         fontWeight: 'bold',
-        marginVertical:10
+        marginVertical: 10
     },
-    textMessage: {
+    messageText: {
         fontSize: 15,
         color: 'grey',
     },
-    messagePhoneNumber:{
-        fontSize:18,
-        marginTop:10
+    messagePhoneNumber: {
+        fontSize: 18,
+        marginTop: 10
     }
 })
