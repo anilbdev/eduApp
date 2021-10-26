@@ -16,7 +16,7 @@ export class Routes extends Component {
             <NavigationContainer>
                 <Stack.Navigator
                     screenOptions={{headerShown:false}}
-                    initialRouteName={navigationStrings.HOME}>
+                    initialRouteName={navigationStrings.LOGIN}>
                     <Stack.Screen  name={navigationStrings.HOME} component={Home} />
                     <Stack.Screen name={navigationStrings.LOGIN} component={Login} />
                 </Stack.Navigator>
