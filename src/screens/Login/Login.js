@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Text, View, Image, StyleSheet } from 'react-native'
-import Message from '../../components/Message'
+import { Message,LoginDetail } from '../../components' 
+
 
 export class Login extends Component {
     constructor(props) {
@@ -21,8 +22,8 @@ export class Login extends Component {
                         source={require('../../../assets/logo.png')} />
                 </View>
                 <Message content={this.state} />
-                <Text>Phone Numbergffgndlgdgldbgld</Text>
-                <Text>Phone Numbergffgndlgdgldbgld</Text>
+                <LoginDetail  content={this.state}/>
+
             </View>
         )
     }
