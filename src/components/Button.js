@@ -1,14 +1,20 @@
 import React, { Component } from 'react'
-import { Text, StyleSheet, View,TouchableOpacity } from 'react-native'
+import { Text, StyleSheet, View, TouchableOpacity } from 'react-native'
 
 export default class Button extends Component {
+    constructor(props) {
+        super(props)
+
+    }
     render() {
+        const { handleSubmit } = this.props
         return (
             <TouchableOpacity
-            style={styles.button}
-        >
-            <Text style={{ color: '#fff', fontSize: 18 }}>Continue</Text>
-        </TouchableOpacity>
+                onPress={(event) => handleSubmit()}
+                style={styles.button}
+            >
+                <Text style={{ color: '#fff', fontSize: 18 }}>Continue</Text>
+            </TouchableOpacity>
         )
     }
 }

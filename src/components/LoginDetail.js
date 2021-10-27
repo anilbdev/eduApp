@@ -4,10 +4,18 @@ import { Button,InputDetail } from '.'
 
 export default class Message extends Component {
     constructor(props) {
-        super(props)
-        console.log(this.props)
+        super(props)       
+        this.state={
+            phoneNumber:'',
+            submitStatus:false
+        }
     }
-
+    handleSubmit = ()=>{
+        this.setState({
+            submitStatus:true
+        })
+        console.log('button submitted');
+    }
 
     render() {
         const { messageHeading, messageText, messagePhoneNumber } = this.props.content
@@ -17,7 +25,7 @@ export default class Message extends Component {
                     <InputDetail/>
                 </View>
                 <View style={styles.buttonConatainer}>
-                    <Button />
+                    <Button handleSubmit={this.handleSubmit} />
                 </View>
             </View>
         )

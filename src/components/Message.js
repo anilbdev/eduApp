@@ -4,7 +4,6 @@ import { Text, StyleSheet, View } from 'react-native'
 export default class Message extends Component {
     constructor(props) {
         super(props)
-        console.log(this.props)
     }
 
 
@@ -28,7 +27,7 @@ const styles = StyleSheet.create({
         fontSize: 20,
         fontWeight: 'bold',
         marginVertical: 10,
-        color:'#000'
+        color: '#000'
     },
     messageText: {
         fontSize: 15,
