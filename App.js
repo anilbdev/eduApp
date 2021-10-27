@@ -1,13 +1,14 @@
 import React from 'react'
-import { View, Text,StyleSheet } from 'react-native'
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 import Routes from './src/navigation/Routes'
+import Test from './src/test/Test';
 
 const App = () => {
   return (
     <SafeAreaProvider>
-      <Routes/>
+      {/* <Routes/> */}
+      <Test/>
     </SafeAreaProvider>
   )
 }
