@@ -14,5 +14,5 @@ const App = () => {
     </SafeAreaProvider>
   )
 }
-
+//1st comment
 export default App
