@@ -15,28 +15,32 @@ const Test = () => {
     const [formattedValue, setFormattedValue] = useState("");
     const [valid, setValid] = useState(false);
     const [showMessage, setShowMessage] = useState(false);
-    const phoneInput = useRef<PhoneInput>(null);
+    const phoneInput = useRef < PhoneInput > (null);
     return (
         <View>
             <PhoneInput
-            
-            defaultValue={value}
-            defaultCode=""
-            onChangeText={(text) => {
-              setValue(text);
-            }}
-            onChangeFormattedText={(text) => {
-              setFormattedValue(text);
-            }}
-            withDarkTheme
-            withShadow
-            autoFocus
-          />
-          <TouchableOpacity
-            style={styles.button}            
-          >
-            <Text style={{color:'#fff',fontSize:18}}>Continue</Text>
-          </TouchableOpacity>
+                value='hello'
+                defaultCode=""
+                layout="second"
+                placeholder='type here'
+                onChangeText={(text) => {
+                    setValue(text);
+                }}
+                onChangeFormattedText={(text) => {
+                    setFormattedValue(text);
+                }}
+                withDarkTheme
+                withShadow
+                autoFocus={true}
+                containerStyle={styles.phoneInput}
+                textContainerStyle={styles.textInput}
+                countryPickerButtonStyle={styles.codeText}
+            />
+            <TouchableOpacity
+                style={styles.button}
+            >
+                <Text style={{ color: '#fff', fontSize: 18 }}>Continue</Text>
+            </TouchableOpacity>
         </View>
     )
 }
@@ -44,11 +48,42 @@ const Test = () => {
 export default Test
 
 const styles = StyleSheet.create({
-    button:{
-        backgroundColor:'green',
-        alignItems:"center",
-        marginHorizontal:20,
-        padding:14,
-        borderRadius:10
+    phoneInput: {
+        backgroundColor: 'grey',
+        borderWidth: 5,
+        borderColor: 'blue',
+        marginHorizontal: 20,
+        width: '80%',
+        alignSelf: "center",
+        padding: 0,       
+        borderRadius: 10,
+        height: 65
+
+    },
+    textInput: {
+        // backgroundColor: 'orange',
+        borderWidth: 3,
+        margin: 0,
+        padding: 10,
+        marginLeft: 10,
+        borderRadius: 10,
+        color:'#000'
+
+    },
+    button: {
+        backgroundColor: 'green',
+        alignItems: "center",
+        width: '80%',
+        alignSelf: "center",
+        padding: 14,
+        borderRadius: 10,
+
+    },
+    codeText: {
+        backgroundColor: 'orange',
+        borderWidth: 3,
+        margin: 0,
+        padding: 0,
+        borderRadius: 10,
     }
 })

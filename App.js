@@ -3,12 +3,14 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 import Routes from './src/navigation/Routes'
 import Test from './src/test/Test';
+import TestClass from './src/test/TestClass';
 
 const App = () => {
   return (
     <SafeAreaProvider>
-      {/* <Routes/> */}
+      <Routes/>
       <Test/>
+      {/* <TestClass/> */}
     </SafeAreaProvider>
   )
 }
