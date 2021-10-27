@@ -17,6 +17,7 @@ export default class Message extends Component {
                         value='+91'
                         style={styles.phoneCountryCode} />
                     <TextInput style={styles.phoneNunmber} />
+                    
                 </View>
             </View>
         )

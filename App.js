@@ -9,7 +9,7 @@ const App = () => {
   return (
     <SafeAreaProvider>
       <Routes/>
-      <Test/>
+      {/* <Test/> */}
       {/* <TestClass/> */}
     </SafeAreaProvider>
   )

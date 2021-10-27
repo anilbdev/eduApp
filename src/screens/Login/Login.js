@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Text, View, Image, StyleSheet } from 'react-native'
-import { Message,LoginDetail } from '../../components' 
+import { Message,LoginDetail,Button } from '../../components' 
 
 
 export class Login extends Component {
@@ -23,7 +23,7 @@ export class Login extends Component {
                 </View>
                 <Message content={this.state} />
                 <LoginDetail  content={this.state}/>
-
+                <Button/>
             </View>
         )
     }
