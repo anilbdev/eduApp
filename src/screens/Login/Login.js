@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Text, View, Image, StyleSheet } from 'react-native'
-import { Message,LoginDetail,Button } from '../../components' 
+import { Message,LoginDetail } from '../../components' 
 
 
 export class Login extends Component {
