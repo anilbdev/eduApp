@@ -19,7 +19,7 @@ export class Login extends Component {
             <View style={styles.conatianer}>
                 <View style={styles.logoImage}>
                     <Image
-                        style={{width:'65%'}}
+                        style={{ width: '65%' }}
                         source={require('../../../assets/logo.png')} />
                 </View>
                 <View style={styles.messgaeContainer}>
@@ -37,19 +37,14 @@ export default Login
 
 const styles = StyleSheet.create({
     conatianer: {
-        // alignItems: 'center',
-        // justifyContent: 'center',
         flex: 1,
-        borderColor: 'blue',
-        borderWidth: 3
-
     },
     logoImage: {
         alignItems: 'center',
         justifyContent: 'center',
         flex: 1,
-        
-      
+
+
     },
     messgaeContainer: {
         maxWidth: '85%',
@@ -60,10 +55,10 @@ const styles = StyleSheet.create({
 
     },
     loginConatiner: {
-        width: '85%',
+        width: '100%',
         alignItems: 'center',
         alignSelf: 'center',
-        
+
 
 
     }

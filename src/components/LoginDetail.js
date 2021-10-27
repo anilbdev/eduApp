@@ -29,8 +29,8 @@ const styles = StyleSheet.create({
         backgroundColor: 'grey',
         alignItems: 'center',
         width: '100%',
-        borderTopLeftRadius: 10,
-        borderTopRightRadius: 10,
+        borderTopLeftRadius: 30,
+        borderTopRightRadius: 30,
         paddingVertical:25
     },
     phoneNumberInput: {
