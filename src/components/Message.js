@@ -22,13 +22,13 @@ export default class Message extends Component {
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: 'yellow',
         alignItems: 'center'
     },
     messageHeading: {
         fontSize: 20,
         fontWeight: 'bold',
-        marginVertical: 10
+        marginVertical: 10,
+        color:'#000'
     },
     messageText: {
         fontSize: 15,

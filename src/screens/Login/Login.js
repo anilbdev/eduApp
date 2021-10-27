@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Text, View, Image, StyleSheet } from 'react-native'
-import { Message,LoginDetail } from '../../components' 
+import { Message, LoginDetail } from '../../components'
 
 
 export class Login extends Component {
@@ -19,11 +19,15 @@ export class Login extends Component {
             <View style={styles.conatianer}>
                 <View style={styles.logoImage}>
                     <Image
+                        style={{width:'65%'}}
                         source={require('../../../assets/logo.png')} />
                 </View>
-                <Message content={this.state} />
-                <LoginDetail  content={this.state}/>
-                
+                <View style={styles.messgaeContainer}>
+                    <Message content={this.state} />
+                </View>
+                <View style={styles.loginConatiner}>
+                    <LoginDetail content={this.state} />
+                </View>
             </View>
         )
     }
@@ -33,8 +37,8 @@ export default Login
 
 const styles = StyleSheet.create({
     conatianer: {
-        alignItems: 'center',
-        justifyContent: 'center',
+        // alignItems: 'center',
+        // justifyContent: 'center',
         flex: 1,
         borderColor: 'blue',
         borderWidth: 3
@@ -44,7 +48,23 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         flex: 1,
-        borderColor: 'blue',
-        borderWidth: 3
+        
+      
+    },
+    messgaeContainer: {
+        maxWidth: '85%',
+        alignItems: 'center',
+        alignSelf: 'center',
+        marginBottom: 10
+
+
+    },
+    loginConatiner: {
+        width: '85%',
+        alignItems: 'center',
+        alignSelf: 'center',
+        
+
+
     }
 })

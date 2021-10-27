@@ -28,14 +28,15 @@ const styles = StyleSheet.create({
     container: {
         backgroundColor: 'grey',
         alignItems: 'center',
-        width: '75%',
+        width: '100%',
         borderTopLeftRadius: 10,
-        borderTopRightRadius: 10
+        borderTopRightRadius: 10,
+        paddingVertical:25
     },
     phoneNumberInput: {
         width:'100%',
         marginVertical:10,
-        borderWidth:4
+        
        
     },    
     buttonConatainer:{
