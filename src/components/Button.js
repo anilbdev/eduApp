@@ -1,14 +1,25 @@
 import React, { Component } from 'react'
-import { Text, StyleSheet, View } from 'react-native'
+import { Text, StyleSheet, View,TouchableOpacity } from 'react-native'
 
 export default class Button extends Component {
     render() {
         return (
-            <View>
-                <Text> textInComponent </Text>
-            </View>
+            <TouchableOpacity
+            style={styles.button}
+        >
+            <Text style={{ color: '#fff', fontSize: 18 }}>Continue</Text>
+        </TouchableOpacity>
         )
     }
 }
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    button: {
+        backgroundColor: 'green',
+        alignItems: "center",
+        width: '80%',
+        alignSelf: "center",
+        padding: 14,
+        borderRadius: 10
+    }
+})

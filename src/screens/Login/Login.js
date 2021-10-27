@@ -23,7 +23,7 @@ export class Login extends Component {
                 </View>
                 <Message content={this.state} />
                 <LoginDetail  content={this.state}/>
-                <Button/>
+                
             </View>
         )
     }
