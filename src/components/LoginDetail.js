@@ -22,8 +22,7 @@ export default class Message extends Component {
         return (
             <View style={styles.container}>
                 <View style={styles.phoneNumberInput}>                   
-                    <InputDetail/>
-                    <OtpInput/>
+                    {this.state.submitStatus ? <OtpInput/> : <InputDetail/>}
                 </View>
                 <View style={styles.buttonConatainer}>
                     <Button handleSubmit={this.handleSubmit} />
