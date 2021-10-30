@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Text, StyleSheet, View, Image } from 'react-native'
-
 export default class Logo extends Component {
     render() {
         return (
@@ -11,7 +10,6 @@ export default class Logo extends Component {
         )
     }
 }
-
 const styles = StyleSheet.create({
     conatianer: {
         // flex: 1,
@@ -22,8 +20,6 @@ const styles = StyleSheet.create({
     logoImage: {
         height: 100,
         width: 100
-
-
-
     }
-})
+}
+)

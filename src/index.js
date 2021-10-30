@@ -10,6 +10,7 @@ export {default as LoginDetail} from './components/LoginDetail'
 export {default as Button} from './components/Button'
 export {default as InputDetail} from './components/InputDetail'
 export{ default as Logo} from './components/Logo'
+export{ default as OtpInput } from './components/OtpInput'
 
 
 //constant  **below//
