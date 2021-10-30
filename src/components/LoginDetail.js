@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Text, StyleSheet, View, TextInput, TouchableHighlight } from 'react-native'
-import {Button,InputDetail,OtpInput} from '../index'
+import {Button,InputDetail,OtpInput,ContactUs} from '../index'
 
 export default class Message extends Component {
     constructor(props) {
@@ -29,6 +29,7 @@ export default class Message extends Component {
                 <View style={styles.buttonConatainer}>
                     <Button buttonName={this.state.buttonName} handleSubmit={this.handleSubmit} />
                 </View>
+                <ContactUs/>
             </View>
         )
     }
