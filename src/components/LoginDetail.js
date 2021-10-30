@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Text, StyleSheet, View, TextInput, TouchableHighlight } from 'react-native'
-import { Button,InputDetail } from '.'
+import {Button,InputDetail} from '../index'
 
 export default class Message extends Component {
     constructor(props) {
