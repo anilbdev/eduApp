@@ -21,6 +21,7 @@ export class Login extends Component {
                     <Image
                         style={{ width: '65%' }}
                         source={require('../../../assets/logo.png')} />
+                        <Text>hellownn</Text>
                 </View>
                 <View style={styles.messgaeContainer}>
                     <Message content={this.state} />
