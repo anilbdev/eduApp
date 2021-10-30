@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Text, StyleSheet, View, TextInput, TouchableHighlight } from 'react-native'
 import {Button,InputDetail,OtpInput,ContactUs} from '../index'
-
 export default class Message extends Component {
     constructor(props) {
         super(props)       
@@ -14,11 +13,10 @@ export default class Message extends Component {
     handleSubmit = ()=>{
         this.setState({
             submitStatus:true,
-            buttonName:'Resend OTP'
+            buttonName:'Resend OTP',
         })
         console.log('button submitted');
     }
-
     render() {
         const { messageHeading, messageText, messagePhoneNumber } = this.props.content
         return (
@@ -34,7 +32,6 @@ export default class Message extends Component {
         )
     }
 }
-
 const styles = StyleSheet.create({
     container: {
         backgroundColor: 'grey',
@@ -47,8 +44,6 @@ const styles = StyleSheet.create({
     phoneNumberInput: {
         width:'100%',
         marginVertical:10,
-        
-       
     },    
     buttonConatainer:{
         width:'100%',

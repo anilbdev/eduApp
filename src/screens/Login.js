@@ -9,7 +9,8 @@ export class Login extends Component {
         this.state = {
             messageHeading: 'Enter your phone number',
             messageText: 'An otp will be sent to your mobile',
-            messagePhoneNumber: ''
+            messagePhoneNumber: '',
+            roundLogo:false
         }
 
     }
@@ -21,7 +22,7 @@ export class Login extends Component {
                     <Image
                         style={{ width: '65%' }}
                         source={require('../../assets/logo.png')} />
-                    <Logo />
+                    <Logo roundLogo={this.state} />
                 </View>
                 <View style={styles.messgaeContainer}>
                     <Message content={this.state} />

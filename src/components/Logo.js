@@ -1,13 +1,20 @@
 import React, { Component } from 'react'
 import { Text, StyleSheet, View, Image } from 'react-native'
 export default class Logo extends Component {
+    constructor(props) {
+        super(props)
+    }
     render() {
-        return (
-            <View style={styles.conatianer}>
+        const { roundLogo } = this.props.roundLogo
+        console.log("hello=== ", { roundLogo });
+        if(roundLogo){
+            return(
+                <View style={styles.conatianer}>
                 <Image style={styles.logoImage}
                     source={require('../../assets/logo2.png')} />
             </View>
-        )
+            )
+        }else return null
     }
 }
 const styles = StyleSheet.create({
