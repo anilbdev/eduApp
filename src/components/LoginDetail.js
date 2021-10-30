@@ -7,12 +7,14 @@ export default class Message extends Component {
         super(props)       
         this.state={
             phoneNumber:'',
-            submitStatus:false
+            submitStatus:false,
+            buttonName:'Continue'
         }
     }
     handleSubmit = ()=>{
         this.setState({
-            submitStatus:true
+            submitStatus:true,
+            buttonName:'Resend OTP'
         })
         console.log('button submitted');
     }
@@ -25,7 +27,7 @@ export default class Message extends Component {
                     {this.state.submitStatus ? <OtpInput/> : <InputDetail/>}
                 </View>
                 <View style={styles.buttonConatainer}>
-                    <Button handleSubmit={this.handleSubmit} />
+                    <Button buttonName={this.state.buttonName} handleSubmit={this.handleSubmit} />
                 </View>
             </View>
         )
