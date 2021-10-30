@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Text, View, Image, StyleSheet } from 'react-native'
-import {Message,LoginDetail} from '../../index'
+import {Message,LoginDetail} from '../index'
 
 
 export class Login extends Component {
@@ -20,7 +20,7 @@ export class Login extends Component {
                 <View style={styles.logoImage}>
                     <Image
                         style={{ width: '65%' }}
-                        source={require('../../../assets/logo.png')} />
+                        source={require('../../assets/logo.png')} />
                         <Text>hellownn</Text>
                 </View>
                 <View style={styles.messgaeContainer}>

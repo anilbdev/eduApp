@@ -1,6 +1,6 @@
 //screens ****below//
-export {default as Login} from './screens/Login/Login'
-export {default as Home} from './screens/Home/Home'
+export {default as Login} from './screens/Login'
+export {default as Home} from './screens/Home'
 
 
 
@@ -9,6 +9,7 @@ export {default as Message} from './components/Message'
 export {default as LoginDetail} from './components/LoginDetail'
 export {default as Button} from './components/Button'
 export {default as InputDetail} from './components/InputDetail'
+export{ default as Logo} from './components/Logo'
 
 
 //constant  **below//
