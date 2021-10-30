@@ -6,7 +6,7 @@ export default class Logo extends Component {
     }
     render() {
         const { roundLogo } = this.props.roundLogo
-        console.log("hello=== ", { roundLogo });
+        
         if(roundLogo){
             return(
                 <View style={styles.conatianer}>

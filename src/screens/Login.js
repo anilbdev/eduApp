@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import { Text, View, Image, StyleSheet } from 'react-native'
 import { Message, LoginDetail, Logo } from '../index'
-
-
 export class Login extends Component {
     constructor(props) {
         super(props)
@@ -10,11 +8,20 @@ export class Login extends Component {
             messageHeading: 'Enter your phone number',
             messageText: 'An otp will be sent to your mobile',
             messagePhoneNumber: '',
-            roundLogo:false
+            roundLogo: false,
+            submitStatus: false,
+            buttonName: 'Continue',
+            phoneNumber: ''
         }
-
     }
-
+    handleButtonPress = () => {
+        this.setState({
+            roundLogo: true,
+            submitStatus:true,
+            buttonName: 'Resend OTP'
+        })
+        console.log('login page detected')
+    }
     render() {
         return (
             <View style={styles.conatianer}>
@@ -28,15 +35,13 @@ export class Login extends Component {
                     <Message content={this.state} />
                 </View>
                 <View style={styles.loginConatiner}>
-                    <LoginDetail content={this.state} />
+                    <LoginDetail content={this.state} handleButtonPress={this.handleButtonPress} />
                 </View>
             </View>
         )
     }
 }
-
 export default Login
-
 const styles = StyleSheet.create({
     conatianer: {
         flex: 1,
@@ -45,23 +50,16 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         flex: 1,
-
-
     },
     messgaeContainer: {
         maxWidth: '85%',
         alignItems: 'center',
         alignSelf: 'center',
         marginBottom: 10
-
-
     },
     loginConatiner: {
         width: '100%',
         alignItems: 'center',
         alignSelf: 'center',
-
-
-
     }
 })

@@ -7,13 +7,13 @@ export default class Button extends Component {
 
     }
     render() {
-        const { handleSubmit,buttonName } = this.props
+        const { content,handleButtonPress } = this.props
         return (
             <TouchableOpacity
-                onPress={(event) => handleSubmit()}
+                onPress={handleButtonPress}
                 style={styles.button}
             >
-                <Text style={{ color: '#fff', fontSize: 18 }}>{buttonName}</Text>
+                <Text style={{ color: '#fff', fontSize: 18 }}>{content.buttonName}</Text>
             </TouchableOpacity>
         )
     }
