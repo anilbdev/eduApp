@@ -11,14 +11,16 @@ export class Login extends Component {
             roundLogo: false,
             submitStatus: false,
             buttonName: 'Continue',
-            phoneNumber: ''
+            phoneNumber: '',
+            contactUs:false
         }
     }
     handleButtonPress = () => {
         this.setState({
             roundLogo: true,
             submitStatus:true,
-            buttonName: 'Resend OTP'
+            buttonName: 'Resend OTP',
+            contactUs:true
         })
         console.log('login page detected')
     }

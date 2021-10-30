@@ -20,7 +20,7 @@ export default class Message extends Component {
                         handleButtonPress={handleButtonPress}
                         />
                 </View>
-                <ContactUs />
+                <ContactUs content={content} />
             </View>
         )
     }
