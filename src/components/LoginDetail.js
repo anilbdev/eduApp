@@ -32,7 +32,8 @@ const styles = StyleSheet.create({
         width: '100%',
         borderTopLeftRadius: 30,
         borderTopRightRadius: 30,
-        paddingVertical: 25
+        paddingTop:25,
+        paddingBottom:10
     },
     phoneNumberInput: {
         width: '100%',
