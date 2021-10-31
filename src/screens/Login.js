@@ -16,12 +16,7 @@ export class Login extends Component {
     }
     handleButtonPress = () => {
         this.setState({
-            roundLogo: true,
-            submitStatus: true,
-            buttonName: 'Resend OTP',
-            contactUs: true,
-            messageHeading:'Verification code',
-            messageText:'Please type the verification code sent to'
+          submitStatus:true
         })
         console.log('login page detected')
     }
@@ -29,6 +24,18 @@ export class Login extends Component {
         this.setState({
             phoneNumber: text
         })
+    }
+    componentDidUpdate() {
+        if (this.state.submitStatus) {
+            this.setState({
+                roundLogo: true,
+                buttonName: 'Resend OTP',
+                contactUs: true,
+                messageHeading: 'Verification code',
+                messageText: 'Please type the verification code sent to',
+                submitStatus:false                
+            })
+        }
     }
     render() {
         return (
