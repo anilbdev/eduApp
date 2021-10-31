@@ -4,21 +4,24 @@ import { Button, InputDetail, OtpInput, ContactUs } from '../index'
 export default class Message extends Component {
     constructor(props) {
         super(props)
-       
-        }
-    
- 
+
+    }
+
+
     render() {
-        const { content,handleButtonPress } = this.props
+        const { content, handleButtonPress, handlePhoneNumber } = this.props
         return (
             <View style={styles.container}>
                 <View style={styles.phoneNumberInput}>
-                    {content.submitStatus ? <OtpInput /> : <InputDetail />}
+                    {content.submitStatus ? <OtpInput /> :
+                        <InputDetail
+                            content={content}
+                            handlePhoneNumber={handlePhoneNumber} />}
                 </View>
                 <View style={styles.buttonConatainer}>
                     <Button content={content}
                         handleButtonPress={handleButtonPress}
-                        />
+                    />
                 </View>
                 <ContactUs content={content} />
             </View>
@@ -32,8 +35,8 @@ const styles = StyleSheet.create({
         width: '100%',
         borderTopLeftRadius: 30,
         borderTopRightRadius: 30,
-        paddingTop:25,
-        paddingBottom:10
+        paddingTop: 25,
+        paddingBottom: 10
     },
     phoneNumberInput: {
         width: '100%',

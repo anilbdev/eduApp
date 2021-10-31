@@ -12,17 +12,22 @@ export class Login extends Component {
             submitStatus: false,
             buttonName: 'Continue',
             phoneNumber: '',
-            contactUs:false
+            contactUs: false
         }
     }
     handleButtonPress = () => {
         this.setState({
             roundLogo: true,
-            submitStatus:true,
+            submitStatus: true,
             buttonName: 'Resend OTP',
-            contactUs:true
+            contactUs: true
         })
         console.log('login page detected')
+    }
+    handlePhoneNumber = (text) => {
+        this.setState({
+            phoneNumber: text
+        })
     }
     render() {
         return (
@@ -37,7 +42,9 @@ export class Login extends Component {
                     <Message content={this.state} />
                 </View>
                 <View style={styles.loginConatiner}>
-                    <LoginDetail content={this.state} handleButtonPress={this.handleButtonPress} />
+                    <LoginDetail content={this.state}
+                        handlePhoneNumber={this.handlePhoneNumber}
+                        handleButtonPress={this.handleButtonPress} />
                 </View>
             </View>
         )

@@ -2,13 +2,20 @@ import React, { Component } from 'react'
 import { Text, StyleSheet, View,TextInput } from 'react-native'
 
 export default class InputDetail extends Component {
+    constructor(props){
+        super(props)
+    }
     render() {
+        const {content,handlePhoneNumber} =this.props
         return (
             <View style={styles.container}>
                 <TextInput
                     value='+91'
                     style={styles.phoneCountryCode} />
-                <TextInput style={styles.phoneNunmber} />
+                <TextInput 
+                value={content.phoneNunmber}
+                onChangeText={(text)=>handlePhoneNumber(text)}
+                style={styles.phoneNunmber} />
             </View>
         )
     }
