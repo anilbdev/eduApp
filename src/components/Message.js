@@ -6,9 +6,9 @@ export default class Message extends Component {
     }
     render() {
         const { content } = this.props
-        console.log('message page>>>>>>>>>',content.submitStatus);
+        console.log('message page>>>>>>>>>', content.submitStatus);
         switch (content.submitStatus) {
-            case 'phone':
+            case 'submitPhone':
                 return (
                     <View style={styles.container}>
                         <Text style={styles.messageHeading}>{content.messageHeading}</Text>
@@ -16,12 +16,18 @@ export default class Message extends Component {
                         <Text style={styles.messagePhoneNumber}></Text>
                     </View>
                 )
-            case 'otp':
+            case 'submitOtp':
                 return (
                     <View style={styles.container}>
                         <Text style={styles.messageHeading}>{content.messageHeading}</Text>
                         <Text style={styles.messageText}>{content.messageText}</Text>
                         <Text style={styles.messagePhoneNumber}>{content.phoneNumber}</Text>
+                    </View>
+                )
+            case 'submitRegister':
+                return (
+                    <View style={styles.container}>
+                        <Text style={styles.messageHeading}>Register Here</Text>                     
                     </View>
                 )
             default:

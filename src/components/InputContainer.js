@@ -6,7 +6,7 @@ export default class InputContainer extends Component {
         const { content, handlePhoneNumber } = this.props
         console.log('Input container>>>>', content.submitStatus);
         switch (content.submitStatus) {
-            case 'phone':
+            case 'submitPhone':
                 return (
                     <View style={styles.container}>
                         <View style={styles.phoneNumberInput}>
@@ -16,7 +16,7 @@ export default class InputContainer extends Component {
                         </View>
                     </View>
                 )
-            case 'otp':
+            case 'submitOtp':
                 return (
                     <View style={styles.container}>
                         <View style={styles.phoneNumberInput}>
@@ -25,7 +25,7 @@ export default class InputContainer extends Component {
                     </View>
                 )
             default:
-                break;
+                return null
         }
     }
 }

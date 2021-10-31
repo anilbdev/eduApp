@@ -8,7 +8,7 @@ export class Login extends Component {
             messageHeading: 'Enter your phone number',
             messageText: 'An otp will be sent to your mobile',
             roundLogo: false,
-            submitStatus: 'phone',
+            submitStatus: 'submitPhone',
             buttonName: 'Continue',
             phoneNumber: '',
             contactUs: false
@@ -26,10 +26,18 @@ export class Login extends Component {
                     contactUs: true,
                     messageHeading: 'Verification code',
                     messageText: 'Please type the verification code sent to',
-                    submitStatus:'otp'
+                    submitStatus:'submitOtp'
                 })
                 this.screen = 'otp'
                 break;
+            case 'otp':
+                this.setState({
+                    roundLogo: true,
+                    buttonName:'Register',
+                    contactUs:false,
+                    messageHeading:'Enter Details',
+                    submitStatus:'submitRegister'
+                })
             default:
                 break;
         }
