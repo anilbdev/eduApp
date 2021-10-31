@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Text, StyleSheet, View } from 'react-native'
+import { Icon } from 'react-native-elements'
 export default class ContactUs extends Component {
     constructor(props) {
         super(props)
@@ -24,26 +25,32 @@ export default class ContactUs extends Component {
             <View>
                 {content.contactUs ? <View style={styles.conatiner}>
                     <Text style={styles.timerText}>Resend otp after {this.state.timer}</Text>
-                    <Text style={styles.contactUsText}>Contact Us</Text>
-                </View> : <Text></Text>}
+                    <View style={{flexDirection:'row'}}>
+                        <Icon
+                            name='call'
+                            color='green'
+                            size={20}
+                        />
+                        <Text style={styles.contactUsText}>Contact Us</Text>
+                    </View>
+                </View> :
+                    <Text></Text>}
             </View>
         )
     }
 }
 const styles = StyleSheet.create({
     conatiner: {
-        borderWidth: 3,
         justifyContent: 'space-between',
-        alignItems:'center',
-        
-        
+        alignItems: 'center',
     },
-    timerText:{
-        fontSize:10,
-        marginBottom:10
+    timerText: {
+        fontSize: 10,
+        marginBottom: 10
     },
-    contactUsText:{
-        color:'green',
-        fontSize:20
+    contactUsText: {
+        color: 'green',
+        fontSize: 20,
+        paddingLeft:10,
     }
 })
