@@ -7,7 +7,6 @@ export class Login extends Component {
         this.state = {
             messageHeading: 'Enter your phone number',
             messageText: 'An otp will be sent to your mobile',
-            messagePhoneNumber: '',
             roundLogo: false,
             submitStatus: false,
             buttonName: 'Continue',
@@ -20,7 +19,9 @@ export class Login extends Component {
             roundLogo: true,
             submitStatus: true,
             buttonName: 'Resend OTP',
-            contactUs: true
+            contactUs: true,
+            messageHeading:'Verification code',
+            messageText:'Please type the verification code sent to'
         })
         console.log('login page detected')
     }

@@ -8,12 +8,12 @@ export default class Message extends Component {
 
 
     render() {
-        const { messageHeading, messageText, messagePhoneNumber } = this.props.content
+        const { content} = this.props
         return (
             <View style={styles.container}>
-                <Text style={styles.messageHeading}>{messageHeading}</Text>
-                <Text style={styles.messageText}>{messageText}</Text>
-                {(messagePhoneNumber == '') ? null : <Text style={styles.messagePhoneNumber}>{messagePhoneNumber}</Text>}
+                <Text style={styles.messageHeading}>{content.messageHeading}</Text>
+                <Text style={styles.messageText}>{content.messageText}</Text>
+                {content.submitStatus ? <Text style={styles.messagePhoneNumber}>{content.phoneNumber}</Text> : null }
             </View>
         )
     }
