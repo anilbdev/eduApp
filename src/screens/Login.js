@@ -8,36 +8,42 @@ export class Login extends Component {
             messageHeading: 'Enter your phone number',
             messageText: 'An otp will be sent to your mobile',
             roundLogo: false,
-            submitStatus: false,
+            submitStatus: 'phone',
             buttonName: 'Continue',
             phoneNumber: '',
             contactUs: false
         }
+        this.screen = 'phone'
     }
+    
     handleButtonPress = () => {
-        this.setState({
-          submitStatus:true
-        })
-        console.log('login page detected')
+        console.log(this.screen);
+        switch (this.screen) {
+            case 'phone':
+                this.setState({
+                    roundLogo: true,
+                    buttonName: 'Resend OTP',
+                    contactUs: true,
+                    messageHeading: 'Verification code',
+                    messageText: 'Please type the verification code sent to',
+                    submitStatus:'otp'
+                })
+                this.screen = 'otp'
+                break;
+            default:
+                break;
+        }
+        
     }
-    handlePhoneNumber = (text) => {
+    handlePhoneNumber = (text) => {        
         this.setState({
             phoneNumber: text
+            
         })
     }
-    componentDidUpdate() {
-        if (this.state.submitStatus) {
-            this.setState({
-                roundLogo: true,
-                buttonName: 'Resend OTP',
-                contactUs: true,
-                messageHeading: 'Verification code',
-                messageText: 'Please type the verification code sent to',
-                submitStatus:false                
-            })
-        }
-    }
+    
     render() {
+        console.log('render working>>>>Login');
         return (
             <View style={styles.conatianer}>
                 <View style={styles.logoImage}>
