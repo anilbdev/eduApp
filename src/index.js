@@ -12,6 +12,7 @@ export {default as InputDetail} from './components/InputDetail'
 export{ default as Logo} from './components/Logo'
 export{ default as OtpInput } from './components/OtpInput'
 export {default as ContactUs} from './components/ContactUs'
+export {default as InputContainer} from './components/InputContainer'
 
 
 //constant  **below//

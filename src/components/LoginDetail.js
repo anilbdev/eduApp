@@ -1,23 +1,17 @@
 import React, { Component } from 'react'
 import { Text, StyleSheet, View, TextInput, TouchableHighlight } from 'react-native'
-import { Button, InputDetail, OtpInput, ContactUs } from '../index'
+import { Button, ContactUs, InputContainer } from '../index'
 export default class Message extends Component {
     constructor(props) {
         super(props)
-
     }
-
-
     render() {
         const { content, handleButtonPress, handlePhoneNumber } = this.props
         return (
             <View style={styles.container}>
-                <View style={styles.phoneNumberInput}>
-                    {content.submitStatus ? <OtpInput /> :
-                        <InputDetail
-                            content={content}
-                            handlePhoneNumber={handlePhoneNumber} />}
-                </View>
+                <InputContainer
+                    content={content}
+                    handlePhoneNumber={handlePhoneNumber} />
                 <View style={styles.buttonConatainer}>
                     <Button content={content}
                         handleButtonPress={handleButtonPress}
@@ -37,10 +31,6 @@ const styles = StyleSheet.create({
         borderTopRightRadius: 30,
         paddingTop: 25,
         paddingBottom: 10
-    },
-    phoneNumberInput: {
-        width: '100%',
-        marginVertical: 10,
     },
     buttonConatainer: {
         width: '100%',

@@ -13,17 +13,18 @@ export default class OtpInput extends Component {
 }
 const styles = StyleSheet.create({
     container: {
-        flexDirection: 'row',
+        
         justifyContent:'center',
-        alignItems:'center'
+        alignItems:'center',
+       
     
     },
     phoneNunmber: {
         backgroundColor: '#333634',
         color: 'white',
-        width:'65%',             
+        width:'85%',             
         fontSize: 18,
         borderRadius: 14,
-        marginRight: 20
+        
     }
 })
