@@ -25,21 +25,32 @@ export default class InputContainer extends Component {
                     </View>
                 )
             case 'submitRegister':
-                return(
+                return (
                     <View style={styles.container}>
-                    <View style={styles.phoneNumberInput}>
-                        <OtpInput />                       
+                        <View style={styles.phoneNumberInput}>
+                            <OtpInput />
+                        </View>
+                        <View style={styles.phoneNumberInput}>
+                            <OtpInput />
+                        </View>
+                        <View style={styles.phoneNumberInput}>
+                            <OtpInput />
+                        </View>
+                        <View style={styles.phoneNumberInput}>
+                            <OtpInput />
+                        </View>
                     </View>
-                    <View style={styles.phoneNumberInput}>
-                        <OtpInput />                       
+                )
+            case 'boardDetailSubmit':
+                return (
+                    <View style={styles.container}>
+                        <View style={styles.phoneNumberInput}>
+                            <OtpInput />
+                        </View>
+                        <View style={styles.phoneNumberInput}>
+                            <OtpInput />
+                        </View>
                     </View>
-                    <View style={styles.phoneNumberInput}>
-                        <OtpInput />                       
-                    </View>
-                    <View style={styles.phoneNumberInput}>
-                        <OtpInput />                       
-                    </View>
-                </View> 
                 )
             default:
                 return null
