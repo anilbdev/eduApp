@@ -1,28 +1,28 @@
 import React, { Component } from 'react'
-import { Text, StyleSheet, View,TextInput } from 'react-native'
-
+import { Text, StyleSheet, View, TextInput } from 'react-native'
 export default class InputDetail extends Component {
-    constructor(props){
+    constructor(props) {
         super(props)
     }
     render() {
-        const {content,handlePhoneNumber} =this.props
+        const { content, handlePhoneNumber } = this.props
         return (
             <View style={styles.container}>
                 <TextInput
                     value='+91'
                     style={styles.phoneCountryCode} />
-                <TextInput 
-                value={content.phoneNunmber}
-                onChangeText={(text)=>handlePhoneNumber(text)}
-                style={styles.phoneNunmber} />
+                <TextInput
+                    placeholder='Mobile number'
+                    placeholderTextColor='#76877a'
+                    value={content.phoneNunmber}
+                    onChangeText={(text) => handlePhoneNumber(text)}
+                    style={styles.phoneNunmber} />
             </View>
         )
     }
 }
-
 const styles = StyleSheet.create({
-    container:{
+    container: {
         flexDirection: 'row',
     },
     phoneCountryCode: {
@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
         color: 'white',
         flex: 1,
         fontSize: 18,
-        
+        paddingLeft: 15,
         borderRadius: 14,
         marginRight: 20
     },

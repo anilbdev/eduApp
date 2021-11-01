@@ -11,7 +11,8 @@ export class Login extends Component {
             submitStatus: 'submitPhone',
             buttonName: 'Continue',
             phoneNumber: '',
-            contactUs: false
+            contactUs: false,
+            textInputPlaceHolder:''
         }
         this.screen = 'phoneSubmited'
     }
