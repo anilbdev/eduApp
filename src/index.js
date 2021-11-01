@@ -15,7 +15,8 @@ export{ default as OtpInput } from './components/OtpInput'
 export {default as ContactUs} from './components/ContactUs'
 export {default as InputContainer} from './components/InputContainer'
 export {default as PickerInput} from './components/PickerInput'
-export {default as Card} from './components/Card'
+export {default as CardDisplay} from './components/CardDisplay'
+export {default as CarousalDisplay} from './components/CarousalDisplay'
 
 //constant  **below//
 export {default as navigationStrings} from './constants/navigationStrings'
