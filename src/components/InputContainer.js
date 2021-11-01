@@ -20,7 +20,7 @@ export default class InputContainer extends Component {
                 return (
                     <View style={styles.container}>
                         <View style={styles.phoneNumberInput}>
-                            <OtpInput />
+                            <OtpInput  placeHolderInput='Enter OTP here' />
                         </View>
                     </View>
                 )
@@ -28,16 +28,16 @@ export default class InputContainer extends Component {
                 return (
                     <View style={styles.container}>
                         <View style={styles.phoneNumberInput}>
-                            <OtpInput />
+                            <OtpInput placeHolderInput='Full Name' />
                         </View>
                         <View style={styles.phoneNumberInput}>
-                            <OtpInput />
+                            <OtpInput placeHolderInput='Email' />
                         </View>
                         <View style={styles.phoneNumberInput}>
-                            <OtpInput />
+                            <OtpInput placeHolderInput='Select state' />
                         </View>
                         <View style={styles.phoneNumberInput}>
-                            <OtpInput />
+                            <OtpInput placeHolderInput='Pin code' />
                         </View>
                     </View>
                 )
@@ -45,10 +45,10 @@ export default class InputContainer extends Component {
                 return (
                     <View style={styles.container}>
                         <View style={styles.phoneNumberInput}>
-                            <OtpInput />
+                            <OtpInput placeHolderInput='Select Board' />
                         </View>
                         <View style={styles.phoneNumberInput}>
-                            <OtpInput />
+                            <OtpInput placeHolderInput='Select Class' />
                         </View>
                     </View>
                 )
