@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 import { Text, StyleSheet, View } from 'react-native'
-
-
 export default class Message extends Component {
     constructor(props) {
         super(props)
@@ -29,7 +27,13 @@ export default class Message extends Component {
             case 'submitRegister':
                 return (
                     <View style={styles.container}>
-                        <Text style={styles.messageHeading}>Register Here</Text>                     
+                        <Text style={styles.messageHeading}>{content.messageHeading}</Text>
+                    </View>
+                )
+            case 'boardDetailSubmit':
+                return (
+                    <View style={styles.container}>
+                        <Text style={styles.messageHeading}>{content.messageHeading}</Text>
                     </View>
                 )
             default:

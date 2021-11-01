@@ -13,43 +13,53 @@ export class Login extends Component {
             phoneNumber: '',
             contactUs: false
         }
-        this.screen = 'phone'
+        this.screen = 'phoneSubmited'
     }
-    
     handleButtonPress = () => {
         console.log(this.screen);
         switch (this.screen) {
-            case 'phone':
+            case 'phoneSubmited':
                 this.setState({
                     roundLogo: true,
                     buttonName: 'Resend OTP',
                     contactUs: true,
                     messageHeading: 'Verification code',
                     messageText: 'Please type the verification code sent to',
-                    submitStatus:'submitOtp'
+                    submitStatus: 'submitOtp'
                 })
-                this.screen = 'otp'
+                this.screen = 'otpSubmitted'
                 break;
-            case 'otp':
+            case 'otpSubmitted':
                 this.setState({
                     roundLogo: true,
-                    buttonName:'Register',
-                    contactUs:false,
-                    messageHeading:'Enter Details',
-                    submitStatus:'submitRegister'
+                    buttonName: 'Register',
+                    contactUs: false,
+                    messageHeading: 'Student Details',
+                    submitStatus: 'submitRegister'
                 })
+                this.screen = 'registerSubmitted'
+                break
+            case 'registerSubmitted':
+                this.setState({
+                    roundLogo: true,
+                    buttonName: 'Continue',
+                    contactUs: false,
+                    messageHeading: 'Select your school Board',
+                    submitStatus: 'boardDetailSubmit'
+                })
+                this.screen = 'goToAppTour'
+            case 'goToAppTour':
+                console.log('go to app tour point')
+                break
             default:
                 break;
         }
-        
     }
-    handlePhoneNumber = (text) => {        
+    handlePhoneNumber = (text) => {
         this.setState({
             phoneNumber: text
-            
         })
     }
-    
     render() {
         console.log('render working>>>>Login');
         return (
