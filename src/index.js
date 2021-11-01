@@ -15,6 +15,7 @@ export{ default as OtpInput } from './components/OtpInput'
 export {default as ContactUs} from './components/ContactUs'
 export {default as InputContainer} from './components/InputContainer'
 export {default as PickerInput} from './components/PickerInput'
+export {default as Card} from './components/Card'
 
 //constant  **below//
 export {default as navigationStrings} from './constants/navigationStrings'
