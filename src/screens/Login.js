@@ -12,7 +12,6 @@ export class Login extends Component {
             buttonName: 'Continue',
             phoneNumber: '',
             contactUs: false,
-            
         }
         this.screen = 'phoneSubmited'
     }
@@ -27,7 +26,6 @@ export class Login extends Component {
                     messageHeading: 'Verification code',
                     messageText: 'Please type the verification code sent to',
                     submitStatus: 'submitOtp',
-                    
                 })
                 this.screen = 'otpSubmitted'
                 break;
