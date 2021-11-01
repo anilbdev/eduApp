@@ -44,13 +44,10 @@ export default class InputContainer extends Component {
                 return (
                     <View style={styles.container}>
                         <View style={styles.phoneNumberInput}>
-                            <OtpInput placeHolderInput='Select Board' />
+                            <PickerInput data='Select Board' />
                         </View>
                         <View style={styles.phoneNumberInput}>
-                            <OtpInput placeHolderInput='Select Class' />
-                        </View>
-                        <View style={styles.phoneNumberInput}>
-                            <PickerInput/>
+                            <PickerInput data='Select Class'/>
                         </View>
                     </View>
                 )
