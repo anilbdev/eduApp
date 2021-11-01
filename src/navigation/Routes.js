@@ -3,7 +3,8 @@ import { Text, View } from 'react-native'
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import {Login,Home,navigationStrings} from '../index'
+import {Login,Home,navigationStrings, AppTour} from '../index'
+
 
 
 const Stack = createNativeStackNavigator();
@@ -19,6 +20,7 @@ export class Routes extends Component {
                     initialRouteName={navigationStrings.LOGIN}>
                     <Stack.Screen  name={navigationStrings.HOME} component={Home} />
                     <Stack.Screen name={navigationStrings.LOGIN} component={Login} />
+                    <Stack.Screen name={navigationStrings.APPTOUR} component={AppTour} />
                 </Stack.Navigator>
             </NavigationContainer>
         )

@@ -1,6 +1,7 @@
 //screens ****below//
 export {default as Login} from './screens/Login'
 export {default as Home} from './screens/Home'
+export {default as AppTour} from './screens/AppTour'
 
 
 
