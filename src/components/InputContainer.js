@@ -1,10 +1,9 @@
 import React, { Component } from 'react'
 import { Text, StyleSheet, View } from 'react-native'
-import { OtpInput, InputDetail } from '../index'
+import { OtpInput, InputDetail,PickerInput } from '../index'
 export default class InputContainer extends Component {
     render() {
         const { content, handlePhoneNumber } = this.props
-        console.log('Input container>>>>', content.submitStatus);
         switch (content.submitStatus) {
             case 'submitPhone':
                 return (
@@ -20,7 +19,7 @@ export default class InputContainer extends Component {
                 return (
                     <View style={styles.container}>
                         <View style={styles.phoneNumberInput}>
-                            <OtpInput  placeHolderInput='Enter OTP here' />
+                            <OtpInput placeHolderInput='Enter OTP here' />
                         </View>
                     </View>
                 )
@@ -49,6 +48,9 @@ export default class InputContainer extends Component {
                         </View>
                         <View style={styles.phoneNumberInput}>
                             <OtpInput placeHolderInput='Select Class' />
+                        </View>
+                        <View style={styles.phoneNumberInput}>
+                            <PickerInput/>
                         </View>
                     </View>
                 )

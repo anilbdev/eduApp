@@ -13,7 +13,7 @@ export{ default as Logo} from './components/Logo'
 export{ default as OtpInput } from './components/OtpInput'
 export {default as ContactUs} from './components/ContactUs'
 export {default as InputContainer} from './components/InputContainer'
-
+export {default as PickerInput} from './components/PickerInput'
 
 //constant  **below//
 export {default as navigationStrings} from './constants/navigationStrings'
