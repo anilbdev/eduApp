@@ -21,8 +21,9 @@ export default class PickerInput extends Component {
                                 selectedLanguage: itemValue
                             })
                         }}
-                    >
-                        <Picker.Item label={data} value="0" />
+                    > 
+                        {/* act as place holder  */}
+                        <Picker.Item label={data} value="0" />  
                         <Picker.Item label="Anil" value="Its value" />
                         <Picker.Item label="Bhasi" value="My second name" />
                     </Picker>

@@ -33,7 +33,7 @@ export default class InputContainer extends Component {
                             <OtpInput placeHolderInput='Email' />
                         </View>
                         <View style={styles.phoneNumberInput}>
-                            <OtpInput placeHolderInput='Select state' />
+                            <PickerInput data='Select State'/>
                         </View>
                         <View style={styles.phoneNumberInput}>
                             <OtpInput placeHolderInput='Pin code' />
