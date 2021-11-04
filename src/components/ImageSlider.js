@@ -76,11 +76,12 @@ const styles = StyleSheet.create({
     paginationDot: {
         color: '#888',
         margin: 3,
-        
+        fontSize:20
     },
     paginationDotActive:{
         color:'#fff',
         margin:3,
+        fontSize:20
         
     }
 

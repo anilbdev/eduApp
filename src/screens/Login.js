@@ -50,7 +50,6 @@ export class Login extends Component {
                 this.screen = 'goToAppTour'
             case 'goToAppTour':
                 this.props.navigation.navigate('AppTour')
-                console.log('go to app tour point')
                 break
             default:
                 break;
