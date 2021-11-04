@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
-import { Text, StyleSheet, View, Image, ScrollView } from 'react-native'
+import { Text, StyleSheet, View, Image, ScrollView, Dimensions } from 'react-native'
 
+const { width } = Dimensions.get('window')
+const height = width * .6
 const images = [
     'https://images.pexels.com/photos/861126/pexels-photo-861126.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
     'https://images.pexels.com/photos/815653/pexels-photo-815653.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
@@ -12,7 +14,7 @@ export default class ImageSlider extends Component {
     render() {
         return (
             <View style={styles.imageContainer}>
-                <ScrollView>
+                <ScrollView horizontal style={styles.scrollViewStyle} >
                     {
                         images.map((image, index) => (
                             <Image
@@ -30,11 +32,15 @@ export default class ImageSlider extends Component {
 
 const styles = StyleSheet.create({
     imageStyle: {
-        width: '100%',
-        height: 300,
+        height,
+        width,
         resizeMode: 'contain'
     },
     imageContainer: {
         marginTop: 10
+    },
+    scrollViewStyle:{
+        height,
+        width
     }
 })
