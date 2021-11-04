@@ -11,10 +11,26 @@ const images = [
 ]
 
 export default class ImageSlider extends Component {
+    state = {
+        active: 0
+    }
+    handleChange=({nativeEvent})=>{
+       const slide =Math.ceil(nativeEvent.contentOffset.x/nativeEvent.layoutMeasurement.width)
+       if(slide != this.state.active){
+           this.setState({
+               active:slide
+           })
+       }
+    }
     render() {
         return (
             <View style={styles.imageContainer}>
-                <ScrollView horizontal style={styles.scrollViewStyle} >
+                <ScrollView
+                    onScroll={this.handleChange}
+                    horizontal
+                    pagingEnabled
+                    showsHorizontalScrollIndicator={false}
+                    style={styles.scrollViewStyle} >
                     {
                         images.map((image, index) => (
                             <Image
@@ -25,6 +41,13 @@ export default class ImageSlider extends Component {
                         ))
                     }
                 </ScrollView>
+                <View style={styles.paginationDotContainer}>
+                    {
+                        images.map((i, k) =>
+                            <Text key={k} style={k==this.state.active ? styles.paginationDotActive : styles.paginationDot}>⬤</Text>
+                        )
+                    }
+                </View>
             </View>
         )
     }
@@ -34,13 +57,28 @@ const styles = StyleSheet.create({
     imageStyle: {
         height,
         width,
-        resizeMode: 'contain'
+        resizeMode: 'cover'
     },
     imageContainer: {
         marginTop: 10
     },
-    scrollViewStyle:{
+    scrollViewStyle: {
         height,
         width
+    },
+    paginationDotContainer: {
+        flexDirection: 'row',
+        position: 'absolute',
+        bottom: 0,
+        alignSelf: 'center'
+    },
+    paginationDot: {
+        color: '#888',
+        margin: 3
+    },
+    paginationDotActive:{
+        color:'#fff',
+        margin:3
     }
+
 })
