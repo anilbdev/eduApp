@@ -18,6 +18,8 @@ export {default as PickerInput} from './components/PickerInput'
 export {default as CardDisplay} from './components/CardDisplay'
 export {default as CarousalDisplay} from './components/CarousalDisplay'
 export {default as ImageSlider} from './components/ImageSlider'
+// Home//
+export {default as ItemButton} from './components/Home/ItemButton'
 
-//constant  **below//
+//constants  **below//
 export {default as navigationStrings} from './constants/navigationStrings'
