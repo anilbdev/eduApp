@@ -9,7 +9,7 @@ export default class Header extends Component {
                 <View style={styles.logoContainer}>
                     <SquareButton />
                     <Image
-                    style={{height:45,width:'25%',marginLeft:10}}
+                    style={{height:45,width:'50%',marginLeft:5,resizeMode:'contain'}}
                     source={require('../../../assets/logo.png')}/>
                 </View>
                 <ItemButton />
@@ -19,10 +19,12 @@ export default class Header extends Component {
 }
 const styles = StyleSheet.create({
     container: {
-        borderWidth: 3,
+        padding:5,
+        flexDirection: 'row',
+        
     },
     logoContainer: {
         flexDirection: 'row',
-        borderWidth: 1
+       
     }
 })

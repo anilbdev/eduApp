@@ -24,7 +24,9 @@ const styles = StyleSheet.create({
         alignSelf: 'flex-start',
         borderColor: 'grey',
         borderWidth: 1,
-        borderRadius: 10
+        borderRadius: 10,
+        height:40,
+        justifyContent:'center'
     },
     itemButtonStyle: {
         alignItems: "center",

@@ -11,9 +11,9 @@ export default class ItemButton extends Component {
                         <Icon
                             name='circle'                            
                             color={isActive ? 'green' : 'black'}
-                            size={20}
+                            size={18}
                         />
-                        <Text style={{fontSize:20,marginLeft:10}}>helloo</Text>
+                        <Text style={{fontSize:18,marginLeft:10}}>helloo</Text>
                     </View>
                 </TouchableHighlight>
             </View>
@@ -28,11 +28,11 @@ const styles = StyleSheet.create({
         borderRadius: 10
     },
     itemButtonStyle: {
-        height: 50,
+        height: 40,
         alignItems: "center",
         width: '100%',
         alignSelf: "center",
-        padding: 14,
+        padding: 10,
         borderRadius: 10,
         
     }
