@@ -3,8 +3,9 @@ import { ScrollView } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 
+
 import Routes from './src/navigation/Routes'
-import { Home } from './src/index';
+import { Home,Header } from './src/index';
 
 
 
@@ -13,7 +14,8 @@ const App = () => {
     <SafeAreaProvider>
       <ScrollView>
         {/* <Routes/> */}
-        <Home />
+        {/* <Home /> */}
+        <Header/>
       </ScrollView>
     </SafeAreaProvider>
   )
