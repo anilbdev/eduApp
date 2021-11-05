@@ -24,6 +24,7 @@ export {default as SquareButton} from './components/Home/SquareButton'
 export {default as Header} from './components/Home/Header'
 export {default as HomeMessge} from './components/Home/HomeMessge'
 export {default as SelectClass} from './components/Home/SelectClass'
+export {default as SelectSubject} from './components/Home/SelectSubject'
 
 //constants  **below//
 export {default as navigationStrings} from './constants/navigationStrings'

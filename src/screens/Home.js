@@ -1,21 +1,26 @@
 import React, { Component } from 'react'
 import { Text, StyleSheet, View } from 'react-native'
-import {Header,HomeMessge,SelectClass } from '..'
+import {
+    Header,
+    HomeMessge,
+    SelectClass,
+    SelectSubject
+} from '..'
 export default class Home extends Component {
     render() {
         return (
             <View style={styles.container}>
                 <View style={styles.headerContainer}>
-                   <Header/>
+                    <Header />
                 </View>
                 <View style={styles.messageContainer}>
-                    <HomeMessge/>
+                    <HomeMessge />
                 </View>
                 <View style={styles.selectClassContainer}>
-                    <SelectClass/>
+                    <SelectClass />
                 </View>
                 <View style={styles.selectSubjectContainer}>
-                    <Text>selectSubject</Text>
+                    <SelectSubject/>
                 </View>
                 <View style={styles.recentCourseContainer}>
                     <Text>recentCourse</Text>

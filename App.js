@@ -5,7 +5,7 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 
 import Routes from './src/navigation/Routes'
-import { Home,SelectClass } from './src/index';
+import { Home,SelectSubject } from './src/index';
 
 
 
@@ -15,7 +15,7 @@ const App = () => {
       <ScrollView>
         {/* <Routes/> */}
         {/* <Home /> */}
-        <SelectClass/>
+        <SelectSubject/>
       </ScrollView>
     </SafeAreaProvider>
   )
