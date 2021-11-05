@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import { Text, StyleSheet, View,TouchableHighlight} from 'react-native'
+import { StyleSheet, View, TouchableHighlight, Image, Text } from 'react-native'
 import { Icon } from 'react-native-elements'
+//Component//
 export default class SquareButton extends Component {
     render() {
-        const isActive=true
         return (
             <View style={styles.container} >
                 <TouchableHighlight style={styles.itemButtonStyle}>
@@ -13,7 +13,6 @@ export default class SquareButton extends Component {
                             color='green'
                             size={30}
                         />
-                        
                     </View>
                 </TouchableHighlight>
             </View>
@@ -22,13 +21,12 @@ export default class SquareButton extends Component {
 }
 const styles = StyleSheet.create({
     container: {
-        alignSelf:'flex-start',
+        alignSelf: 'flex-start',
         borderColor: 'grey',
         borderWidth: 1,
         borderRadius: 10
     },
     itemButtonStyle: {
-        
         alignItems: "center",
         width: '100%',
         alignSelf: "center",

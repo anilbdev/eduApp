@@ -1,18 +1,20 @@
 import React from 'react'
+import { ScrollView } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 
 import Routes from './src/navigation/Routes'
-import { ItemButton,SquareButton } from './src/index';
+import { SquareButton } from './src/index';
 
 
 
 const App = () => {
   return (
     <SafeAreaProvider>
-      {/* <Routes/> */}
-      {/* <ItemButton/> */}
+      <ScrollView>
+      {/* <Routes/> */}      
       <SquareButton/>
+      </ScrollView>
     </SafeAreaProvider>
   )
 }
