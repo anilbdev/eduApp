@@ -1,14 +1,12 @@
 import React, { Component } from 'react'
 import { Text, StyleSheet, View } from 'react-native'
-import { ItemButton, SquareButton } from '..'
+import { ItemButton, SquareButton,Header } from '..'
 export default class Home extends Component {
     render() {
         return (
             <View style={styles.container}>
                 <View style={styles.headerContainer}>
-                    <Text> Home screen </Text>
-                    <SquareButton />
-                    <ItemButton />
+                   <Header/>
                 </View>
                 <View style={styles.messageContainer}>
                     <Text>message</Text>
