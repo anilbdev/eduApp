@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Text, StyleSheet, View } from 'react-native'
-import {Header,HomeMessge } from '..'
+import {Header,HomeMessge,SelectClass } from '..'
 export default class Home extends Component {
     render() {
         return (
@@ -12,7 +12,7 @@ export default class Home extends Component {
                     <HomeMessge/>
                 </View>
                 <View style={styles.selectClassContainer}>
-                    <Text>selectClass</Text>
+                    <SelectClass/>
                 </View>
                 <View style={styles.selectSubjectContainer}>
                     <Text>selectSubject</Text>
