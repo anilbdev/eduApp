@@ -12,6 +12,16 @@ export default class SelectSubject extends Component {
                     <View style={styles.buttonStyle}>
                     <ItemButton/>
                     </View>
+                    <View style={styles.buttonStyle}>
+                    <ItemButton/>
+                    </View>
+                    <View style={styles.buttonStyle}>
+                    <ItemButton/>
+                    </View>
+                    <View style={styles.buttonStyle}>
+                    <ItemButton/>
+                    </View>
+                    
                     
                    
                 </ScrollView>
@@ -24,7 +34,7 @@ const styles = StyleSheet.create({
         borderWidth:3
     },
     buttonStyle:{
-        width:300,
+        width:150,
         borderWidth:3
     }
 })

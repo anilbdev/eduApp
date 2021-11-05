@@ -22,7 +22,7 @@ export default class ItemButton extends Component {
 }
 const styles = StyleSheet.create({
     container: {
-        width: '35%',
+        width: '100%',
         borderColor: 'grey',
         borderWidth: 1,
         borderRadius: 10
