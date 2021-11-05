@@ -4,7 +4,8 @@ import {
     Header,
     HomeMessge,
     SelectClass,
-    SelectSubject
+    SelectSubject,
+    RecentCourse
 } from '..'
 export default class Home extends Component {
     render() {
@@ -23,7 +24,7 @@ export default class Home extends Component {
                     <SelectSubject/>
                 </View>
                 <View style={styles.recentCourseContainer}>
-                    <Text>recentCourse</Text>
+                    <RecentCourse/>
                 </View>
                 <View style={styles.classSliderContainer}>
                     <Text>classSlider</Text>

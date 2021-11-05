@@ -25,6 +25,7 @@ export {default as Header} from './components/Home/Header'
 export {default as HomeMessge} from './components/Home/HomeMessge'
 export {default as SelectClass} from './components/Home/SelectClass'
 export {default as SelectSubject} from './components/Home/SelectSubject'
+export {default as RecentCourse} from './components/Home/RecentCourse'
 
 //constants  **below//
 export {default as navigationStrings} from './constants/navigationStrings'
