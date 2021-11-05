@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Text, StyleSheet, View, ScrollView, Dimensions } from 'react-native'
-import {ItemButton} from '../../index'
+import { ItemButton } from '../../index'
 //component//
 export default class SelectSubject extends Component {
     render() {
@@ -8,33 +8,30 @@ export default class SelectSubject extends Component {
             <View style={styles.container}>
                 <ScrollView
                     horizontal
+                    showsHorizontalScrollIndicator={false}
                 >
                     <View style={styles.buttonStyle}>
-                    <ItemButton/>
+                        <ItemButton />
                     </View>
                     <View style={styles.buttonStyle}>
-                    <ItemButton/>
+                        <ItemButton />
                     </View>
                     <View style={styles.buttonStyle}>
-                    <ItemButton/>
+                        <ItemButton />
                     </View>
                     <View style={styles.buttonStyle}>
-                    <ItemButton/>
+                        <ItemButton />
                     </View>
-                    
-                    
-                   
                 </ScrollView>
             </View>
         )
     }
 }
 const styles = StyleSheet.create({
-    container:{
-        borderWidth:3
+    container: {
     },
-    buttonStyle:{
-        width:150,
-        borderWidth:3
+    buttonStyle: {
+        width: 150,
+        padding:10
     }
 })
