@@ -22,6 +22,7 @@ export {default as ImageSlider} from './components/ImageSlider'
 export {default as ItemButton} from './components/Home/ItemButton'
 export {default as SquareButton} from './components/Home/SquareButton'
 export {default as Header} from './components/Home/Header'
+export {default as HomeMessge} from './components/Home/HomeMessge'
 
 //constants  **below//
 export {default as navigationStrings} from './constants/navigationStrings'

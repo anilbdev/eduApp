@@ -14,8 +14,8 @@ const App = () => {
     <SafeAreaProvider>
       <ScrollView>
         {/* <Routes/> */}
-        {/* <Home /> */}
-        <Header/>
+        <Home />
+        {/* <Header/> */}
       </ScrollView>
     </SafeAreaProvider>
   )
