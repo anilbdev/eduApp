@@ -12,7 +12,9 @@ export default class Header extends Component {
                     style={{height:45,width:'50%',marginLeft:5,resizeMode:'contain'}}
                     source={require('../../../assets/logo.png')}/>
                 </View>
-                <ItemButton />
+                <View style={styles.buttonStyle}>
+                    <ItemButton/>
+                    </View>
             </View>
         )
     }
@@ -25,6 +27,10 @@ const styles = StyleSheet.create({
     },
     logoContainer: {
         flexDirection: 'row',
+       
+    },
+    buttonStyle:{
+        width:150,
        
     }
 })
