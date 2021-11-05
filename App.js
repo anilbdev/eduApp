@@ -3,7 +3,7 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 
 import Routes from './src/navigation/Routes'
-import { ItemButton } from './src/index';
+import { ItemButton,SquareButton } from './src/index';
 
 
 
@@ -11,7 +11,8 @@ const App = () => {
   return (
     <SafeAreaProvider>
       {/* <Routes/> */}
-      <ItemButton/>
+      {/* <ItemButton/> */}
+      <SquareButton/>
     </SafeAreaProvider>
   )
 }

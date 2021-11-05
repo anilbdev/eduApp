@@ -20,6 +20,7 @@ export {default as CarousalDisplay} from './components/CarousalDisplay'
 export {default as ImageSlider} from './components/ImageSlider'
 // Home//
 export {default as ItemButton} from './components/Home/ItemButton'
+export {default as SquareButton} from './components/Home/SquareButton'
 
 //constants  **below//
 export {default as navigationStrings} from './constants/navigationStrings'
