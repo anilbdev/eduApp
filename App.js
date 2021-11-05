@@ -4,7 +4,7 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 
 import Routes from './src/navigation/Routes'
-import { SquareButton } from './src/index';
+import { Home } from './src/index';
 
 
 
@@ -12,8 +12,8 @@ const App = () => {
   return (
     <SafeAreaProvider>
       <ScrollView>
-      {/* <Routes/> */}      
-      <SquareButton/>
+        {/* <Routes/> */}
+        <Home />
       </ScrollView>
     </SafeAreaProvider>
   )

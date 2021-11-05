@@ -1,17 +1,54 @@
 import React, { Component } from 'react'
 import { Text, StyleSheet, View } from 'react-native'
-import { ItemButton } from '..'
-
-
+import { ItemButton, SquareButton } from '..'
 export default class Home extends Component {
     render() {
         return (
-            <View>
-                <Text> Home screen </Text>
-                <ItemButton/>
+            <View style={styles.container}>
+                <View style={styles.headerContainer}>
+                    <Text> Home screen </Text>
+                    <SquareButton />
+                    <ItemButton />
+                </View>
+                <View style={styles.messageContainer}>
+                    <Text>message</Text>
+                </View>
+                <View style={styles.selectClassContainer}>
+                    <Text>selectClass</Text>
+                </View>
+                <View style={styles.selectSubjectContainer}>
+                    <Text>selectSubject</Text>
+                </View>
+                <View style={styles.recentCourseContainer}>
+                    <Text>recentCourse</Text>
+                </View>
+                <View style={styles.classSliderContainer}>
+                    <Text>classSlider</Text>
+                </View>
             </View>
         )
     }
 }
-
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    container: {
+        borderWidth: 3,
+    },
+    headerContainer: {
+        borderWidth: 2
+    },
+    messageContainer: {
+        borderWidth: 2
+    },
+    selectClassContainer: {
+        borderWidth: 2
+    },
+    selectSubjectContainer: {
+        borderWidth: 2
+    },
+    recentCourseContainer: {
+        borderWidth: 2
+    },
+    classSliderContainer: {
+        borderWidth: 2
+    }
+})
