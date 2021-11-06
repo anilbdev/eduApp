@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { Text, StyleSheet, View } from 'react-native'
 import Carousel from 'react-native-snap-carousel';
-import { Button } from 'react-native-elements';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import { Avatar } from 'react-native-elements';
+
 export default class Carousal extends Component {
     constructor(props) {
         super(props);
@@ -13,22 +13,27 @@ export default class Carousal extends Component {
                 {
                     title: "Item 1",
                     text: "Text 1",
+                    url:'#'
                 },
                 {
                     title: "Item 2",
                     text: "Text 2",
+                    url:'#'
                 },
                 {
                     title: "Item 3",
                     text: "Text 3",
+                    url:'#'
                 },
                 {
                     title: "Item 4",
                     text: "Text 4",
+                    url:'#'
                 },
                 {
                     title: "Item 5",
                     text: "Text 5",
+                    url:'#'
                 },
             ]
         }
@@ -36,8 +41,19 @@ export default class Carousal extends Component {
     _renderItem({ item, index }) {
         return (
             <View style={styles.itemContainer}>
-                <Text style={{ fontSize: 30 }}>{item.title}</Text>
-                <Text>{item.text}</Text>
+                <View style={styles.itemHeaderImage}>
+                    <Avatar
+                        rounded
+                        size={120}
+                        source={{uri:item.url}}
+                    />
+                </View>
+                <View style={styles.itemBody}>
+                    <Text>{item.text}</Text>
+                </View>
+                <View style={styles.itemButton}>
+                    <Text>{item.title}</Text>
+                </View>
             </View>
         )
     }
@@ -57,7 +73,6 @@ export default class Carousal extends Component {
                         renderItem={this._renderItem}
                         onSnapToItem={index => this.setState({ activeIndex: index })} />
                 </View>
-               
             </View>
         )
     }
@@ -71,12 +86,15 @@ const styles = StyleSheet.create({
         backgroundColor: '#bfa45a',
         borderRadius: 15,
         height: '90%',
-        padding: 0,
-        marginLeft: 0,
-        marginRight: 0,
     },
-    buttonContainer: {
-        justifyContent: 'center',
-        alignItems: 'center'
+    itemHeaderImage: {
+        
+        borderWidth: 3
+    },
+    itemBody: {
+        borderWidth: 2
+    },
+    itemButton: {
+        borderWidth: 3
     }
 })
