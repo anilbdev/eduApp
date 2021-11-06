@@ -1,14 +1,19 @@
 import React, { Component } from 'react'
 import { Text, StyleSheet, View } from 'react-native'
+import { CarousalDisplay } from '../..'
 
 export default class ClassCard extends Component {
     render() {
         return (
-            <View>
-                <Text> Class Cards </Text>
+            <View style={styles.container}>
+                <CarousalDisplay/>
             </View>
         )
     }
 }
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    container:{
+
+    }
+})

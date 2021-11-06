@@ -2,13 +2,15 @@ import React from 'react'
 import { ScrollView } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import Routes from './src/navigation/Routes'
-import { Home } from './src/index';
-import TestClass from './src/test/TestClass'
+import { Home,ClassCard,CardDisplay,CarousalDisplay } from './src/index';
+
 const App = () => {
   return (
     <SafeAreaProvider>
       {/* <Routes/> */}
-      <Home />
+      {/* <Home /> */}
+      <ClassCard/>
+      {/* <CarousalDisplay/> */}
     </SafeAreaProvider>
   )
 }

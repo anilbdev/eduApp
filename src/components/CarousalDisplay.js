@@ -57,18 +57,7 @@ export default class Carousal extends Component {
                         renderItem={this._renderItem}
                         onSnapToItem={index => this.setState({ activeIndex: index })} />
                 </View>
-                <View style={styles.buttonContainer}>
-                    <Button
-                        icon={
-                            <Icon
-                                name="arrow-right"
-                                size={15}
-                                color="white"
-                            />
-                        }
-                        containerStyle={{ width: 100, height: 50 }}
-                    />
-                </View>
+               
             </View>
         )
     }
@@ -86,9 +75,8 @@ const styles = StyleSheet.create({
         marginLeft: 0,
         marginRight: 0,
     },
-    buttonContainer:{
-        justifyContent:'center',
-        alignItems:'center'     
-        
+    buttonContainer: {
+        justifyContent: 'center',
+        alignItems: 'center'
     }
 })
