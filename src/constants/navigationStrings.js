@@ -1,6 +1,6 @@
 export default{
     HOME:'Home',
     LOGIN:'Profile',
-    APPTOUR:'AppTour'
-    
+    APPTOUR:'AppTour',
+    MYTABS:'MyTabs'
 }

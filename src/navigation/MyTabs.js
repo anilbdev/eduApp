@@ -11,7 +11,7 @@ import {
 const Tab = createBottomTabNavigator();
 function MyTabs() {
   return (
-    <NavigationContainer>
+    
       <Tab.Navigator>
         <Tab.Screen name="Home" component={Home} />
         <Tab.Screen name="Recent" component={Recent} />
@@ -19,7 +19,7 @@ function MyTabs() {
         <Tab.Screen name="Profile" component={Profile} />
         <Tab.Screen name="Contact" component={Contact} />
       </Tab.Navigator>
-    </NavigationContainer>
+    
   );
 }
 export default MyTabs

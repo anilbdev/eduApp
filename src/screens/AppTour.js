@@ -12,7 +12,7 @@ export default class AppTour extends Component {
         super(props)
     }
     handleButtonPress=()=>{
-        this.props.navigation.navigate('Home')
+        this.props.navigation.navigate('MyTabs')
     }
     render() {
         return (
