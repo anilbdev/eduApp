@@ -12,28 +12,28 @@ export default class Carousal extends Component {
             carouselItems: [
                 {
                     title: "Item 1",
-                    text: "Text 1",
-                    url:'#'
+                    text: "Displays an icon as the main content of the Avatar. Cannot be used alongside title. When used with the source prop it will be used as the placeholder.",
+                    url: '#'
                 },
                 {
                     title: "Item 2",
-                    text: "Text 2",
-                    url:'#'
+                    text: "Displays an icon as the main content of the Avatar. Cannot be used alongside title. When used with the source prop it will be used as the placeholder.",
+                    url: '#'
                 },
                 {
                     title: "Item 3",
-                    text: "Text 3",
-                    url:'#'
+                    text: "Displays an icon as the main content of the Avatar. Cannot be used alongside title. When used with the source prop it will be used as the placeholder.",
+                    url: '#'
                 },
                 {
                     title: "Item 4",
-                    text: "Text 4",
-                    url:'#'
+                    text: "Displays an icon as the main content of the Avatar. Cannot be used alongside title. When used with the source prop it will be used as the placeholder.",
+                    url: '#'
                 },
                 {
                     title: "Item 5",
-                    text: "Text 5",
-                    url:'#'
+                    text: "Displays an icon as the main content of the Avatar. Cannot be used alongside title. When used with the source prop it will be used as the placeholder.",
+                    url: '#'
                 },
             ]
         }
@@ -45,11 +45,12 @@ export default class Carousal extends Component {
                     <Avatar
                         rounded
                         size={120}
-                        source={{uri:item.url}}
+                        source={{ uri: item.url }}
                     />
                 </View>
                 <View style={styles.itemBody}>
-                    <Text>{item.text}</Text>
+                    <Text style={{fontSize:20,color:'#fff',margin:10}}>{item.title}</Text>
+                    <Text style={{marginLeft:10}}>{item.text}</Text>
                 </View>
                 <View style={styles.itemButton}>
                     <Text>{item.title}</Text>
@@ -88,7 +89,8 @@ const styles = StyleSheet.create({
         height: '90%',
     },
     itemHeaderImage: {
-        
+        paddingLeft: 30,
+        paddingVertical: 20,
         borderWidth: 3
     },
     itemBody: {
