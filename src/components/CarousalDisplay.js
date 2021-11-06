@@ -62,7 +62,7 @@ export default class Carousal extends Component {
                 </View>
                 <View style={styles.itemBody}>
                     <Text style={{fontSize:20,color:'#fff',margin:10}}>{item.title}</Text>
-                    <Text style={{marginLeft:10}}>{item.text}</Text>
+                    <Text style={{color:'#99a7ad', marginLeft:10}}>{item.text}</Text>
                 </View>
                 <View style={styles.itemButton}>
                     <Button content={item} handleButtonPress={null}/>
@@ -91,23 +91,28 @@ export default class Carousal extends Component {
 }
 const styles = StyleSheet.create({
     container: {
-        borderWidth: 3,
+        
         paddingTop: 20
     },
     itemContainer: {
-        backgroundColor: '#bfa45a',
+        backgroundColor: '#002333',
         borderRadius: 15,
-        height: '90%',
+        // height: '90%',
     },
     itemHeaderImage: {
         paddingLeft: 30,
         paddingVertical: 20,
-        borderWidth: 3
+        
+        
+        
     },
     itemBody: {
-        borderWidth: 2
+        
+        padding:10
+        
     },
     itemButton: {
-        borderWidth: 3
+        
+        marginVertical:25
     }
 })
