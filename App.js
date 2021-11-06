@@ -6,8 +6,8 @@ import TestClass from './src/test/TestClass';
 const App = () => {
   return (
     <SafeAreaProvider>
-      <Routes />
-      {/* <MyTabs/> */}
+      {/* <Routes /> */}
+      <MyTabs/>
       {/* <TestClass/> */}
     </SafeAreaProvider>
   )
