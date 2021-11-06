@@ -11,7 +11,7 @@ export default class Logo extends Component {
             return(
                 <View style={styles.conatianer}>
                 <Image style={styles.logoImage}
-                    source={require('../../assets/logo2.png')} />
+                    source={require('../../../assets/logo2.png')} />
             </View>
             )
         }else return null

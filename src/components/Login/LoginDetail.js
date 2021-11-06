@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Text, StyleSheet, View, TextInput, TouchableHighlight } from 'react-native'
-import { Button, ContactUs, InputContainer } from '../index'
+import { Button, ContactUs, InputContainer } from '../../index'
 export default class Message extends Component {
     constructor(props) {
         super(props)

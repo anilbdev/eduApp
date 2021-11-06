@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Text, StyleSheet, View } from 'react-native'
 import Carousel from 'react-native-snap-carousel';
 import { Avatar } from 'react-native-elements';
-import{Button} from '../index'
+import{Button} from '../../index'
 
 export default class Carousal extends Component {
     constructor(props) {

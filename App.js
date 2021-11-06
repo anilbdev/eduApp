@@ -5,8 +5,8 @@ import { Home, } from './src/index';
 const App = () => {
   return (
     <SafeAreaProvider>
-      {/* <Routes /> */}
-      <Home />
+      <Routes />
+      {/* <Home /> */}
     </SafeAreaProvider>
   )
 }

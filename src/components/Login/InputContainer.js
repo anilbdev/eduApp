@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Text, StyleSheet, View } from 'react-native'
-import { OtpInput, InputDetail,PickerInput } from '../index'
+import { OtpInput, InputDetail,PickerInput } from '../../index'
 export default class InputContainer extends Component {
     render() {
         const { content, handlePhoneNumber } = this.props
