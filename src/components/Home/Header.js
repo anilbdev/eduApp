@@ -9,7 +9,7 @@ export default class Header extends Component {
                 <View style={styles.logoContainer}>
                     <SquareButton />
                     <Image
-                    style={{height:45,width:'50%',marginLeft:5,resizeMode:'contain'}}
+                    style={{height:45,width:'40%',marginLeft:5,resizeMode:'contain'}}
                     source={require('../../../assets/logo.png')}/>
                 </View>
                 <View style={styles.buttonStyle}>

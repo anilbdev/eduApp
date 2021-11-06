@@ -38,24 +38,21 @@ export default class Home extends Component {
 }
 const styles = StyleSheet.create({
     container: {
-        borderWidth: 3,
     },
     headerContainer: {
-        borderWidth: 2
+        paddingLeft: 15,
     },
     messageContainer: {
-        borderWidth: 2
+        paddingLeft: 15,
     },
     selectClassContainer: {
-        borderWidth: 2
     },
     selectSubjectContainer: {
-        borderWidth: 2
+        paddingLeft: 15,
     },
     recentCourseContainer: {
-        borderWidth: 2
+        paddingLeft: 15,
     },
     classSliderContainer: {
-        borderWidth: 2
     }
 })
