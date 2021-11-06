@@ -54,5 +54,6 @@ const styles = StyleSheet.create({
         paddingLeft: 15,
     },
     classSliderContainer: {
+        marginBottom:65
     }
 })
