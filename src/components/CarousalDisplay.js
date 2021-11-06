@@ -2,43 +2,55 @@ import React, { Component } from 'react'
 import { Text, StyleSheet, View } from 'react-native'
 import Carousel from 'react-native-snap-carousel';
 import { Avatar } from 'react-native-elements';
+import{Button} from '../index'
 
 export default class Carousal extends Component {
     constructor(props) {
         super(props);
         this.state = {
             activeIndex: 0,
-            buttonName: 'Finish',
+            buttonName: 'Watch Now',
             carouselItems: [
                 {
                     title: "Item 1",
                     text: "Displays an icon as the main content of the Avatar. Cannot be used alongside title. When used with the source prop it will be used as the placeholder.",
-                    url: '#'
+                    url: '#',
+                    buttonName:'Watch Now'
+        
                 },
                 {
                     title: "Item 2",
                     text: "Displays an icon as the main content of the Avatar. Cannot be used alongside title. When used with the source prop it will be used as the placeholder.",
-                    url: '#'
+                    url: '#',
+                    buttonName:'Watch Now'
+        
                 },
                 {
                     title: "Item 3",
                     text: "Displays an icon as the main content of the Avatar. Cannot be used alongside title. When used with the source prop it will be used as the placeholder.",
-                    url: '#'
+                    url: '#',
+                    buttonName:'Watch Now'
+        
                 },
                 {
                     title: "Item 4",
                     text: "Displays an icon as the main content of the Avatar. Cannot be used alongside title. When used with the source prop it will be used as the placeholder.",
-                    url: '#'
+                    url: '#',
+                    buttonName:'Watch Now'
+        
                 },
                 {
                     title: "Item 5",
                     text: "Displays an icon as the main content of the Avatar. Cannot be used alongside title. When used with the source prop it will be used as the placeholder.",
-                    url: '#'
+                    url: '#',
+                    buttonName:'Watch Now'
+        
                 },
             ]
         }
     }
     _renderItem({ item, index }) {
+        
         return (
             <View style={styles.itemContainer}>
                 <View style={styles.itemHeaderImage}>
@@ -53,15 +65,14 @@ export default class Carousal extends Component {
                     <Text style={{marginLeft:10}}>{item.text}</Text>
                 </View>
                 <View style={styles.itemButton}>
-                    <Text>{item.title}</Text>
+                    <Button content={item} handleButtonPress={null}/>
+                    
                 </View>
             </View>
         )
     }
     render() {
-        const content = {
-            buttonName: 'Finish'
-        }
+        
         return (
             <View>
                 <View style={styles.container}>

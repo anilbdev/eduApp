@@ -8,6 +8,7 @@ export default class Button extends Component {
     }
     render() {
         const { content,handleButtonPress } = this.props
+        
         return (
             <TouchableOpacity
                 onPress={handleButtonPress}
