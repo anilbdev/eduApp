@@ -5,7 +5,8 @@ import {
     HomeMessge,
     SelectClass,
     SelectSubject,
-    RecentCourse
+    RecentCourse,
+    ClassCard
 } from '..'
 export default class Home extends Component {
     render() {
@@ -27,7 +28,7 @@ export default class Home extends Component {
                     <RecentCourse/>
                 </View>
                 <View style={styles.classSliderContainer}>
-                    <Text>classSlider</Text>
+                    <ClassCard/>
                 </View>
             </View>
         )
