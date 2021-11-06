@@ -6,10 +6,8 @@ import { Home, } from './src/index';
 const App = () => {
   return (
     <SafeAreaProvider>
-      <ScrollView>
-        {/* <Routes/> */}
-        <Home />
-      </ScrollView>
+      <Routes />
+      {/* <Home /> */}
     </SafeAreaProvider>
   )
 }
