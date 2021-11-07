@@ -11,7 +11,8 @@ import {
    Notifications,
    Referals,
    ShareApp,
-   LogOut
+   LogOut,
+   navigationStrings
 
 } from '../index'
 const Drawer = createDrawerNavigator();
@@ -32,14 +33,14 @@ function MyDrawer() {
             drawerIcon: () => null
           }}
         />
-        <Drawer.Screen name="ExamsCorner" component={ExamCorner} />
-        <Drawer.Screen name="Subscription" component={Subscription} />
-        <Drawer.Screen name="Analytics" component={Analytics} />
-        <Drawer.Screen name="Downloads" component={Downloads} />
-        <Drawer.Screen name="Notifications" component={Notifications} />
-        <Drawer.Screen name="Referals" component={Referals} />
-        <Drawer.Screen name="Share App" component={ShareApp} />
-        <Drawer.Screen name="Log Out" component={LogOut} />
+        <Drawer.Screen name={navigationStrings.EXAM_CORNER} component={ExamCorner} />
+        <Drawer.Screen name={navigationStrings.SUBSCRIPTION} component={Subscription} />
+        <Drawer.Screen name={navigationStrings.ANALYTICS} component={Analytics} />
+        <Drawer.Screen name={navigationStrings.DOWNLOADS} component={Downloads} />
+        <Drawer.Screen name={navigationStrings.NOTIFICATIONS} component={Notifications} />
+        <Drawer.Screen name={navigationStrings.REFERALS} component={Referals} />
+        <Drawer.Screen name={navigationStrings.SHARE_APP} component={ShareApp} />
+        <Drawer.Screen name={navigationStrings.LOGOUT} component={LogOut} />
       </Drawer.Navigator>
     </NavigationContainer>
   );
