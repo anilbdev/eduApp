@@ -3,8 +3,16 @@ import { Text, StyleSheet, View } from 'react-native'
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { NavigationContainer } from '@react-navigation/native';
 import {
-  Home,
-  Exams, MyTabs
+   MyTabs,
+   ExamCorner,
+   Subscription,
+   Analytics,
+   Downloads,
+   Notifications,
+   Referals,
+   ShareApp,
+   LogOut
+
 } from '../index'
 const Drawer = createDrawerNavigator();
 function MyDrawer() {
@@ -24,7 +32,14 @@ function MyDrawer() {
             drawerIcon: () => null
           }}
         />
-        <Drawer.Screen name="Exams" component={Exams} />
+        <Drawer.Screen name="ExamsCorner" component={ExamCorner} />
+        <Drawer.Screen name="Subscription" component={Subscription} />
+        <Drawer.Screen name="Analytics" component={Analytics} />
+        <Drawer.Screen name="Downloads" component={Downloads} />
+        <Drawer.Screen name="Notifications" component={Notifications} />
+        <Drawer.Screen name="Referals" component={Referals} />
+        <Drawer.Screen name="Share App" component={ShareApp} />
+        <Drawer.Screen name="Log Out" component={LogOut} />
       </Drawer.Navigator>
     </NavigationContainer>
   );

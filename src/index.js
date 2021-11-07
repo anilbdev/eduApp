@@ -6,6 +6,16 @@ export {default as Recent}  from './screens/Recent'
 export {default as Profile} from './screens/Profile'
 export {default as Exams} from './screens/Exams'
 export {default as Contact} from './screens/Contact'
+//Drawer-screen//
+export {default as ExamCorner} from './screens/Drawer/ExamCorner'
+export {default as Subscription} from './screens/Drawer/Subscription'
+export {default as Analytics} from './screens/Drawer/Analytics'
+export {default as Downloads} from './screens/Drawer/Downloads'
+export {default as Notifications} from './screens/Drawer/Notifications'
+export {default as Referals} from './screens/Drawer/Referals'
+export {default as ShareApp} from './screens/Drawer/ShareApp'
+export {default as LogOut} from './screens/Drawer/LogOut'
+
 
 
 //Common-components//
