@@ -55,3 +55,4 @@ export {default as navigationStrings} from './constants/navigationStrings'
 
 //navigation//
 export {default as MyTabs} from './navigation/MyTabs' 
+export {default as MyDrawer} from './navigation/MyDrawer'
