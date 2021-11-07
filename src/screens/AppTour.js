@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Text, StyleSheet, View } from 'react-native'
-import {CarousalDisplay,ImageSlider,Button} from '../index'
+import {ImageSlider,Button,navigationStrings} from '../index'
 
 const content={
     buttonName:"Finish"
@@ -12,7 +12,7 @@ export default class AppTour extends Component {
         super(props)
     }
     handleButtonPress=()=>{
-        this.props.navigation.navigate('MyTabs')
+        this.props.navigation.navigate(navigationStrings.MYDRAWER)
     }
     render() {
         return (

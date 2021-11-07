@@ -7,9 +7,9 @@ import TestClass from './src/test/TestClass';
 const App = () => {
   return (
     <SafeAreaProvider>
-      {/* <Routes /> */}
+      <Routes />
       {/* <MyTabs/> */}
-      <MyDrawer/>
+      {/* <MyDrawer/> */}
     </SafeAreaProvider>
   )
 }

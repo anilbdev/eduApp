@@ -7,7 +7,8 @@ import {Login,
     Home,
     navigationStrings, 
     AppTour,
-    MyTabs
+    MyTabs,
+    MyDrawer
 } from '../index'
 
 
@@ -27,7 +28,8 @@ export class Routes extends Component {
                     <Stack.Screen  name={navigationStrings.HOME} component={Home} />
                     <Stack.Screen name={navigationStrings.LOGIN} component={Login} />
                     <Stack.Screen name={navigationStrings.APPTOUR} component={AppTour} />
-                    <Stack.Screen name={navigationStrings.MYTABS} component={MyTabs} />
+                   
+                    <Stack.Screen name={navigationStrings.MYDRAWER} component={MyDrawer} />
                 </Stack.Navigator>
             </NavigationContainer>
         )

@@ -14,6 +14,7 @@ export default{
     NOTIFICATIONS:'Notifications',
     REFERALS:'Referals',
     SHARE_APP:'Share App',
-    LOGOUT:'Log Out'
+    LOGOUT:'Log Out',
+    MYDRAWER:'MyDrawer'
 
 }
