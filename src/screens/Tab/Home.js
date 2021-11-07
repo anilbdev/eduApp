@@ -7,7 +7,7 @@ import {
     SelectSubject,
     RecentCourse,
     ClassCard
-} from '..'
+} from '../../index'
 export default class Home extends Component {
     render() {
         return (

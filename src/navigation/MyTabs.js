@@ -7,7 +7,8 @@ import {
   Recent,
   Exams,
   Profile,
-  Contact
+  Contact,
+  navigationStrings
 } from '../index'
 import { color } from 'react-native-elements/dist/helpers';
 const Tab = createBottomTabNavigator();
@@ -29,7 +30,7 @@ function MyTabs() {
       }}
     >
       <Tab.Screen
-        name="Home"
+        name={navigationStrings.HOME}
         component={Home}
         options={{
           tabBarActiveTintColor: '#00c458',
@@ -40,7 +41,7 @@ function MyTabs() {
         }}
       />
       <Tab.Screen
-        name="Recent"
+        name={navigationStrings.RECENT}
         component={Recent}
         options={{
           tabBarActiveTintColor: '#00c458',
@@ -51,7 +52,7 @@ function MyTabs() {
         }}
       />
       <Tab.Screen
-        name="Exams"
+        name={navigationStrings.EXAMS}
         component={Exams}
         options={{
           tabBarActiveTintColor: '#00c458',
@@ -62,7 +63,7 @@ function MyTabs() {
         }}
       />
       <Tab.Screen
-        name="Profile"
+        name={navigationStrings.PROFILE}
         component={Profile}
         options={{
           tabBarActiveTintColor: '#00c458',
@@ -73,7 +74,7 @@ function MyTabs() {
         }}
       />
       <Tab.Screen
-        name="Contact"
+        name={navigationStrings.CONTACT}
         component={Contact}
         options={{
           tabBarActiveTintColor: '#00c458',

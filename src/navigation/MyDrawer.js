@@ -25,7 +25,7 @@ function MyDrawer() {
       }}
       >
         <Drawer.Screen
-          name="MyTabs"
+          name={navigationStrings.MYTABS}
           component={MyTabs}
           options={{
             drawerLabel: () => null,

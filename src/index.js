@@ -1,11 +1,11 @@
 //screens ****below//
 export {default as Login} from './screens/Login'
-export {default as Home} from './screens/Home'
 export {default as AppTour} from './screens/AppTour'
-export {default as Recent}  from './screens/Recent'
-export {default as Profile} from './screens/Profile'
-export {default as Exams} from './screens/Exams'
-export {default as Contact} from './screens/Contact'
+export {default as Home} from './screens/Tab/Home'
+export {default as Recent}  from './screens/Tab/Recent'
+export {default as Profile} from './screens/Tab/Profile'
+export {default as Exams} from './screens/Tab/Exams'
+export {default as Contact} from './screens/Tab/Contact'
 //Drawer-screen//
 export {default as ExamCorner} from './screens/Drawer/ExamCorner'
 export {default as Subscription} from './screens/Drawer/Subscription'
