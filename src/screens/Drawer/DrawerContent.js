@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { Text, StyleSheet, View } from 'react-native'
 import { Icon } from 'react-native-elements/dist/icons/Icon'
+import { Avatar } from 'react-native-elements';
+
 import {
     DrawerContentScrollView,
     DrawerItem,
@@ -18,10 +20,113 @@ export default class DrawerContent extends Component {
                 </View>
                 <DrawerContentScrollView {...this.props} style={styles.drawerScrollView}>
                     <View style={styles.profileContainer}>
-                        <Text>Profile section</Text>
+                        <View style={styles.profileImageConatiner}>
+                            <Avatar
+                                size={100}
+                                rounded
+                                source={{
+                                    uri:
+                                        'https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg',
+                                }}
+                            />
+                        </View>
+                        <View style={styles.profileDetail}>
+                            <Text style={{ color: '#ffffff' }}>Name</Text>
+                            <Text
+                                style={{
+                                    color: '#264553',
+                                    fontSize: 15
+                                }}
+                            >Details</Text>
+                        </View>
+                        <View style={styles.profileArrow}>
+                            <Icon
+                                color='green'
+                                name='navigate-next'
+                            />
+                        </View>
                     </View>
                     <View style={styles.mainContent}>
-                        <Text>NAvigation section</Text>
+                        <View style={styles.menuContainer}>
+                            <Icon
+                                size={40}
+                                color='green'
+                                solid
+
+                                name='check-box-outline-blank'
+                            />
+                            <Text style={styles.menuText}>Exam Corner</Text>
+                        </View>
+                        <View style={styles.menuContainer}>
+                            <Icon
+                                size={40}
+                                color='green'
+                                solid
+
+                                name='check-box-outline-blank'
+                            />
+                            <Text style={styles.menuText}>Subscriptions</Text>
+                        </View>
+                        <View style={styles.menuContainer}>
+                            <Icon
+                                size={40}
+                                color='green'
+                                solid
+
+                                name='check-box-outline-blank'
+                            />
+                            <Text style={styles.menuText}>Analytics</Text>
+                        </View>
+                        <View style={styles.menuContainer}>
+                            <Icon
+                                size={40}
+                                color='green'
+                                solid
+
+                                name='check-box-outline-blank'
+                            />
+                            <Text style={styles.menuText}>Downloads</Text>
+                        </View>
+                        <View style={styles.menuContainer}>
+                            <Icon
+                                size={40}
+                                color='green'
+                                solid
+
+                                name='check-box-outline-blank'
+                            />
+                            <Text style={styles.menuText}>Notifications</Text>
+                        </View>
+                        <View style={styles.menuContainer}>
+                            <Icon
+                                size={40}
+                                color='green'
+                                solid
+
+                                name='check-box-outline-blank'
+                            />
+                            <Text style={styles.menuText}>Refferals</Text>
+                        </View>
+                        <View style={styles.menuContainer}>
+                            <Icon
+                                size={40}
+                                color='green'
+                                solid
+
+                                name='check-box-outline-blank'
+                            />
+                            <Text style={styles.menuText}>Share App</Text>
+                        </View>
+                        <View style={styles.menuContainer}>
+                            <Icon
+                                size={40}
+                                color='red'
+                                solid
+
+                                name='check-box-outline-blank'
+                            />
+                            <Text style={styles.menuText,{color:'red'}}>Log Out</Text>
+                        </View>
                     </View>
 
                 </DrawerContentScrollView>
@@ -37,20 +142,47 @@ export default class DrawerContent extends Component {
 const styles = StyleSheet.create({
     mainContainer: {
         flex: 1,
-        borderWidth: 3
+        borderWidth: 3,
+        backgroundColor: '#002130',
+
     },
     drawerScrollView: {
         borderWidth: 5
     },
-    topButton:{
-        borderColor:'green',
-        borderWidth:4
+    topButton: {
+        borderColor: 'green',
+        borderWidth: 4
     },
-    profileContainer:{
-        borderWidth:5
+    profileContainer: {
+        height: 100,
+        width: '100%',
+        flexDirection: 'row',
+        padding: 20
+
     },
-    mainContent:{
-        borderWidth:4
+    profileImageConatiner: {
+        justifyContent: 'center'
+    },
+    profileDetail: {
+        justifyContent: 'center',
+        marginLeft: 25,
+
+    },
+    profileArrow: {
+        justifyContent: 'center',
+        marginLeft: 25,
+
+    },
+    mainContent: {
+        borderWidth: 4
+    },
+    menuContainer: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        margin: 5
+    },
+    menuText: {
+        color: '#fff'
     },
     contactButton: {
         borderColor: 'red'
