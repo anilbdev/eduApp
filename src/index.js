@@ -15,6 +15,7 @@ export {default as Notifications} from './screens/Drawer/Notifications'
 export {default as Referals} from './screens/Drawer/Referals'
 export {default as ShareApp} from './screens/Drawer/ShareApp'
 export {default as LogOut} from './screens/Drawer/LogOut'
+export {default as DrawerContent} from './screens/Drawer/DrawerContent'
 
 
 
@@ -26,7 +27,6 @@ export {default as Button} from './components/Common/Button'
 // Login-components//
 export {default as Message} from './components/Login/Message'
 export {default as LoginDetail} from './components/Login/LoginDetail'
-
 export {default as InputDetail} from './components/Login/InputDetail'
 export{ default as Logo} from './components/Login/Logo'
 export{ default as OtpInput } from './components/Login/OtpInput'
