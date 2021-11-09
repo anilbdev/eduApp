@@ -160,7 +160,7 @@ const styles = StyleSheet.create({
 
     },
     drawerScrollView: {
-        
+
     },
     topButton: {
         borderColor: 'green',
@@ -188,18 +188,23 @@ const styles = StyleSheet.create({
 
     },
     mainContent: {
-       
+       paddingLeft:20,
+       paddingRight:20
     },
     menuContainer: {
         flexDirection: 'row',
         alignItems: 'center',
-        margin: 5
+        margin: 5,
+        borderBottomColor:'#264553',
+        borderBottomWidth:1,
+        paddingBottom:3
     },
     menuText: {
         color: '#fff'
     },
     contactButton: {
-        marginHorizontal:20,
-        marginHorizontal:5
+      
+        paddingHorizontal:30,
+        paddingVertical:15
     }
 })
