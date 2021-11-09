@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import { Text, StyleSheet, View } from 'react-native'
 import { Icon } from 'react-native-elements/dist/icons/Icon'
-import { Avatar } from 'react-native-elements';
+import { Avatar,Button } from 'react-native-elements';
 
 import {
     DrawerContentScrollView,
     DrawerItem,
 } from '@react-navigation/drawer'
+import { color } from 'react-native-reanimated';
 
 export default class DrawerContent extends Component {
     constructor(props) {
@@ -51,7 +52,7 @@ export default class DrawerContent extends Component {
                             <Icon
                                 size={40}
                                 color='green'
-                                solid
+
 
                                 name='check-box-outline-blank'
                             />
@@ -61,7 +62,7 @@ export default class DrawerContent extends Component {
                             <Icon
                                 size={40}
                                 color='green'
-                                solid
+
 
                                 name='check-box-outline-blank'
                             />
@@ -71,7 +72,7 @@ export default class DrawerContent extends Component {
                             <Icon
                                 size={40}
                                 color='green'
-                                solid
+
 
                                 name='check-box-outline-blank'
                             />
@@ -81,7 +82,7 @@ export default class DrawerContent extends Component {
                             <Icon
                                 size={40}
                                 color='green'
-                                solid
+
 
                                 name='check-box-outline-blank'
                             />
@@ -91,7 +92,7 @@ export default class DrawerContent extends Component {
                             <Icon
                                 size={40}
                                 color='green'
-                                solid
+
 
                                 name='check-box-outline-blank'
                             />
@@ -101,7 +102,7 @@ export default class DrawerContent extends Component {
                             <Icon
                                 size={40}
                                 color='green'
-                                solid
+
 
                                 name='check-box-outline-blank'
                             />
@@ -111,7 +112,7 @@ export default class DrawerContent extends Component {
                             <Icon
                                 size={40}
                                 color='green'
-                                solid
+
 
                                 name='check-box-outline-blank'
                             />
@@ -121,17 +122,29 @@ export default class DrawerContent extends Component {
                             <Icon
                                 size={40}
                                 color='red'
-                                solid
+
 
                                 name='check-box-outline-blank'
                             />
-                            <Text style={styles.menuText,{color:'red'}}>Log Out</Text>
+                            <Text style={styles.menuText, { color: 'red' }}>Log Out</Text>
                         </View>
                     </View>
 
                 </DrawerContentScrollView>
                 <View style={styles.contactButton}>
-                    <Text>Button-contact</Text>
+
+                  <Button
+                    title="Enquire Now"
+                    type="outline"
+                    buttonStyle={{
+                        borderColor:'green',
+                        borderWidth:2
+                      }}
+                      titleStyle={{
+                          color:'green'
+                      }}
+                  />
+
                 </View>
             </View>
 
@@ -142,12 +155,12 @@ export default class DrawerContent extends Component {
 const styles = StyleSheet.create({
     mainContainer: {
         flex: 1,
-        borderWidth: 3,
+      
         backgroundColor: '#002130',
 
     },
     drawerScrollView: {
-        borderWidth: 5
+        
     },
     topButton: {
         borderColor: 'green',
@@ -157,7 +170,8 @@ const styles = StyleSheet.create({
         height: 100,
         width: '100%',
         flexDirection: 'row',
-        padding: 20
+        padding: 20,
+        marginVertical: 20
 
     },
     profileImageConatiner: {
@@ -174,7 +188,7 @@ const styles = StyleSheet.create({
 
     },
     mainContent: {
-        borderWidth: 4
+       
     },
     menuContainer: {
         flexDirection: 'row',
@@ -185,6 +199,7 @@ const styles = StyleSheet.create({
         color: '#fff'
     },
     contactButton: {
-        borderColor: 'red'
+        marginHorizontal:20,
+        marginHorizontal:5
     }
 })
