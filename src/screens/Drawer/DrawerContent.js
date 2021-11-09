@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Text, StyleSheet, View } from 'react-native'
 import { Icon } from 'react-native-elements/dist/icons/Icon'
-import { Avatar,Button } from 'react-native-elements';
+import { Avatar, Button } from 'react-native-elements';
 
 import {
     DrawerContentScrollView,
@@ -17,7 +17,10 @@ export default class DrawerContent extends Component {
         return (
             <View style={styles.mainContainer}>
                 <View style={styles.topButton}>
-                    <Text>Top Button</Text>
+                    <Icon
+                        size={20}
+                        color='green'
+                        name='close' />
                 </View>
                 <DrawerContentScrollView {...this.props} style={styles.drawerScrollView}>
                     <View style={styles.profileContainer}>
@@ -133,17 +136,17 @@ export default class DrawerContent extends Component {
                 </DrawerContentScrollView>
                 <View style={styles.contactButton}>
 
-                  <Button
-                    title="Enquire Now"
-                    type="outline"
-                    buttonStyle={{
-                        borderColor:'green',
-                        borderWidth:2
-                      }}
-                      titleStyle={{
-                          color:'green'
-                      }}
-                  />
+                    <Button
+                        title="Enquire Now"
+                        type="outline"
+                        buttonStyle={{
+                            borderColor: 'green',
+                            borderWidth: 2
+                        }}
+                        titleStyle={{
+                            color: 'green'
+                        }}
+                    />
 
                 </View>
             </View>
@@ -155,7 +158,7 @@ export default class DrawerContent extends Component {
 const styles = StyleSheet.create({
     mainContainer: {
         flex: 1,
-      
+
         backgroundColor: '#002130',
 
     },
@@ -163,8 +166,15 @@ const styles = StyleSheet.create({
 
     },
     topButton: {
-        borderColor: 'green',
-        borderWidth: 4
+        borderColor: '#fff',
+        borderWidth: 1,
+        width:40,
+        height:40,
+        justifyContent:'center',
+        alignItems:'center',
+        borderRadius:10,
+        marginLeft:25,
+        marginTop:15
     },
     profileContainer: {
         height: 100,
@@ -188,23 +198,23 @@ const styles = StyleSheet.create({
 
     },
     mainContent: {
-       paddingLeft:20,
-       paddingRight:20
+        paddingLeft: 20,
+        paddingRight: 20
     },
     menuContainer: {
         flexDirection: 'row',
         alignItems: 'center',
         margin: 5,
-        borderBottomColor:'#264553',
-        borderBottomWidth:1,
-        paddingBottom:3
+        borderBottomColor: '#264553',
+        borderBottomWidth: 1,
+        paddingBottom: 3
     },
     menuText: {
         color: '#fff'
     },
     contactButton: {
-      
-        paddingHorizontal:30,
-        paddingVertical:15
+
+        paddingHorizontal: 30,
+        paddingVertical: 15
     }
 })
