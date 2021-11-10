@@ -2,18 +2,16 @@ import React, { Component } from 'react'
 import { Text, StyleSheet, View } from 'react-native'
 import { Icon } from 'react-native-elements/dist/icons/Icon'
 import { Avatar, Button } from 'react-native-elements';
+import {DrawerContentScrollView} from '@react-navigation/drawer'
+import{navigationStrings} from '../../index'
 
-import {
-    DrawerContentScrollView,
-    DrawerItem,
-} from '@react-navigation/drawer'
-import { color } from 'react-native-reanimated';
 
 export default class DrawerContent extends Component {
     constructor(props) {
         super(props)
     }
     render() {
+
         return (
             <View style={styles.mainContainer}>
                 <View style={styles.topButton}>
@@ -22,7 +20,7 @@ export default class DrawerContent extends Component {
                         color='green'
                         name='close' />
                 </View>
-                <DrawerContentScrollView {...this.props} style={styles.drawerScrollView}>
+                <DrawerContentScrollView style={styles.drawerScrollView}>
                     <View style={styles.profileContainer}>
                         <View style={styles.profileImageConatiner}>
                             <Avatar
@@ -55,11 +53,24 @@ export default class DrawerContent extends Component {
                             <Icon
                                 size={40}
                                 color='green'
+                                name='check-box-outline-blank'
+                            />
+                            <Text
+                                onPress={() => { this.props.navigation.navigate(navigationStrings.EXAM_CORNER) }}
+                                style={styles.menuText}>Exam Corner</Text>
+                        </View>
+                       
+                        <View style={styles.menuContainer}>
+                            <Icon
+                                size={40}
+                                color='green'
 
 
                                 name='check-box-outline-blank'
                             />
-                            <Text style={styles.menuText}>Exam Corner</Text>
+                            <Text 
+                            onPress={() => { this.props.navigation.navigate(navigationStrings.SUBSCRIPTION) }}
+                            style={styles.menuText}>Subscriptions</Text>
                         </View>
                         <View style={styles.menuContainer}>
                             <Icon
@@ -69,7 +80,9 @@ export default class DrawerContent extends Component {
 
                                 name='check-box-outline-blank'
                             />
-                            <Text style={styles.menuText}>Subscriptions</Text>
+                            <Text 
+                            onPress={() => { this.props.navigation.navigate(navigationStrings.ANALYTICS) }}
+                            style={styles.menuText}>Analytics</Text>
                         </View>
                         <View style={styles.menuContainer}>
                             <Icon
@@ -79,7 +92,9 @@ export default class DrawerContent extends Component {
 
                                 name='check-box-outline-blank'
                             />
-                            <Text style={styles.menuText}>Analytics</Text>
+                            <Text 
+                            onPress={() => { this.props.navigation.navigate(navigationStrings.DOWNLOADS) }}
+                            style={styles.menuText}>Downloads</Text>
                         </View>
                         <View style={styles.menuContainer}>
                             <Icon
@@ -89,7 +104,9 @@ export default class DrawerContent extends Component {
 
                                 name='check-box-outline-blank'
                             />
-                            <Text style={styles.menuText}>Downloads</Text>
+                            <Text 
+                            onPress={() => { this.props.navigation.navigate(navigationStrings.NOTIFICATIONS) }}
+                            style={styles.menuText}>Notifications</Text>
                         </View>
                         <View style={styles.menuContainer}>
                             <Icon
@@ -99,7 +116,9 @@ export default class DrawerContent extends Component {
 
                                 name='check-box-outline-blank'
                             />
-                            <Text style={styles.menuText}>Notifications</Text>
+                            <Text 
+                            onPress={() => { this.props.navigation.navigate(navigationStrings.REFERALS) }}
+                            style={styles.menuText}>Refferals</Text>
                         </View>
                         <View style={styles.menuContainer}>
                             <Icon
@@ -109,17 +128,9 @@ export default class DrawerContent extends Component {
 
                                 name='check-box-outline-blank'
                             />
-                            <Text style={styles.menuText}>Refferals</Text>
-                        </View>
-                        <View style={styles.menuContainer}>
-                            <Icon
-                                size={40}
-                                color='green'
-
-
-                                name='check-box-outline-blank'
-                            />
-                            <Text style={styles.menuText}>Share App</Text>
+                            <Text 
+                            onPress={() => { this.props.navigation.navigate(navigationStrings.SHARE_APP) }}
+                            style={styles.menuText}>Share App</Text>
                         </View>
                         <View style={styles.menuContainer}>
                             <Icon
@@ -129,7 +140,9 @@ export default class DrawerContent extends Component {
 
                                 name='check-box-outline-blank'
                             />
-                            <Text style={styles.menuText, { color: 'red' }}>Log Out</Text>
+                            <Text 
+                            onPress={() => { this.props.navigation.navigate(navigationStrings.LOGOUT) }}
+                            style={styles.menuText, { color: 'red' }}>Log Out</Text>
                         </View>
                     </View>
 
@@ -168,13 +181,13 @@ const styles = StyleSheet.create({
     topButton: {
         borderColor: '#fff',
         borderWidth: 1,
-        width:40,
-        height:40,
-        justifyContent:'center',
-        alignItems:'center',
-        borderRadius:10,
-        marginLeft:25,
-        marginTop:15
+        width: 40,
+        height: 40,
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderRadius: 10,
+        marginLeft: 25,
+        marginTop: 15
     },
     profileContainer: {
         height: 100,

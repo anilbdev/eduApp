@@ -21,7 +21,7 @@ function MyDrawer() {
   return (
     <NavigationContainer>
       <Drawer.Navigator
-      drawerContent={props=> <DrawerContent{...props} />}
+      drawerContent={props=> <DrawerContent {...props} />}
         screenOptions={{
           headerShown: false
         }}
