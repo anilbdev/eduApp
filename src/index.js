@@ -6,6 +6,7 @@ export {default as Recent}  from './screens/Tab/Recent'
 export {default as Profile} from './screens/Tab/Profile'
 export {default as Exams} from './screens/Tab/Exams'
 export {default as Contact} from './screens/Tab/Contact'
+export {default as SubjectScreen} from './screens/SubjectScreen'
 //Drawer-screen//
 export {default as ExamCorner} from './screens/Drawer/ExamCorner'
 export {default as Subscription} from './screens/Drawer/Subscription'
@@ -16,6 +17,8 @@ export {default as Referals} from './screens/Drawer/Referals'
 export {default as ShareApp} from './screens/Drawer/ShareApp'
 export {default as LogOut} from './screens/Drawer/LogOut'
 export {default as DrawerContent} from './screens/Drawer/DrawerContent'
+
+
 
 
 
