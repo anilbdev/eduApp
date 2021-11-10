@@ -19,7 +19,7 @@ import {
 const Drawer = createDrawerNavigator();
 function MyDrawer() {
   return (
-    <NavigationContainer>
+    
       <Drawer.Navigator
       drawerContent={props=> <DrawerContent {...props} />}
         screenOptions={{
@@ -44,7 +44,7 @@ function MyDrawer() {
         <Drawer.Screen name={navigationStrings.SHARE_APP} component={ShareApp} />
         <Drawer.Screen name={navigationStrings.LOGOUT} component={LogOut} />
       </Drawer.Navigator>
-    </NavigationContainer>
+ 
   );
 }
 export default MyDrawer
