@@ -9,12 +9,16 @@ import {
     ClassCard
 } from '../../index'
 export default class Home extends Component {
+    constructor(props){
+        super(props)
+    }
     render() {
+       
         return (
             <View style={styles.container}>
                 <ScrollView>
                     <View style={styles.headerContainer}>
-                        <Header />
+                        <Header {...this.props} />
                     </View>
                     <View style={styles.messageContainer}>
                         <HomeMessge />

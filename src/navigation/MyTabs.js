@@ -12,7 +12,8 @@ import {
 } from '../index'
 import { color } from 'react-native-elements/dist/helpers';
 const Tab = createBottomTabNavigator();
-function MyTabs() {
+function MyTabs(props) {
+  
   return (
     <Tab.Navigator
       screenOptions={{

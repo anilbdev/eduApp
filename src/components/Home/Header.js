@@ -3,11 +3,15 @@ import { Text, StyleSheet, View, Image } from 'react-native'
 import { SquareButton, ItemButton } from '../../index'
 //component//
 export default class Header extends Component {
+    constructor(props){
+        super(props)
+    }
     render() {
+        
         return (
             <View style={styles.container}>
                 <View style={styles.logoContainer}>
-                    <SquareButton />
+                    <SquareButton {...this.props} />
                     <Image
                     style={{height:45,width:'40%',marginLeft:5,resizeMode:'contain'}}
                     source={require('../../../assets/logo.png')}/>
