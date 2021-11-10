@@ -1,6 +1,41 @@
 import React, { Component } from 'react'
-import { Text, StyleSheet, View, TouchableHighlight } from 'react-native'
+import { Text, StyleSheet, View, TouchableHighlight,FlatList } from 'react-native'
 import { Icon } from 'react-native-elements'
+const data = [{
+    id:1,
+    title:'Chapter 1',
+    part:2
+},
+{
+    id:2,
+    title:'Chapter 2',
+    part:2
+},
+{
+    id:3,
+    title:'Chapter 3',
+    part:3
+},
+{
+    id:4,
+    title:'Chapter 4',
+    part:8
+},
+{
+    id:5,
+    title:'Chapter 5',
+    part:5
+},
+{
+    id:6,
+    title:'Chapter 6',
+    part:4
+}]
+
+const renderItem =({item})=>(
+    <Text>{item.title}</Text>
+)
+
 export default class SubjectScreen extends Component {
     render() {
         return (
@@ -32,6 +67,11 @@ export default class SubjectScreen extends Component {
                     </View>
                 </View>
                 <View style={styles.mainBodyContainer}>
+                    <FlatList
+                    data={data}
+                    keyExtractor={(item) => item.id}
+                    renderItem={renderItem}
+                    />
                 </View>
             </View>
         )
