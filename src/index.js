@@ -43,6 +43,10 @@ export {default as InputContainer} from './components/Login/InputContainer'
 export {default as PickerInput} from './components/Login/PickerInput'
 export {default as ImageSlider} from './components/Login/ImageSlider'
 
+//ChapterSTack-COmponenets//
+export {default as ChapterHeader} from './components/ChapterStack/ChapterHeader'
+
+
 
 // Home-components//
 export {default as ItemButton} from './components/Home/ItemButton'
