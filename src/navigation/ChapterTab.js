@@ -13,14 +13,24 @@ const Tab = createMaterialTopTabNavigator();
 export default class ChapterTab extends Component {
     render() {
         return (
-            <NavigationContainer>
-                <Tab.Navigator>
+            
+                <Tab.Navigator
+                    screenOptions={{
+                        tabBarLabelStyle: {
+                            fontSize: 9,
+                        },
+                        tabBarStyle: {
+                            backgroundColor: 'red'
+                        },
+                        
+                    }}
+                >
                     <Tab.Screen name={navigationStrings.VIDEOS} component={Videos} />
                     <Tab.Screen name={navigationStrings.CHAPTER_TEST} component={ChapterTest} />
                     <Tab.Screen name={navigationStrings.RESOURCES} component={Resources} />
                     <Tab.Screen name={navigationStrings.QN_BANK} component={QnBank} />
                 </Tab.Navigator>
-            </NavigationContainer>
+           
         )
     }
 }
