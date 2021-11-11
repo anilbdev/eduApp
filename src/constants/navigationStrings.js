@@ -15,6 +15,8 @@ export default{
     REFERALS:'Referals',
     SHARE_APP:'Share App',
     LOGOUT:'Log Out',
-    MYDRAWER:'MyDrawer'
+    MYDRAWER:'MyDrawer',
+    SUBJECT_SCREEN:'Subject Screen',
+    HOME_STACK:'Home_Stack'
 
 }
