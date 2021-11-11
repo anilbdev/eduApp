@@ -38,7 +38,7 @@ const data = [{
     hour:7
 }]
 const renderItem = ({ item }) => (
-    <View style={styles.cardContainer}>
+    <View  style={styles.cardContainer}>
         <Text style={{ fontSize: 23 }} >{item.title}</Text>
         <View style={styles.cardDetail} >
             <View style={styles.cardChapterSummary}>
@@ -128,9 +128,19 @@ const styles = StyleSheet.create({
         alignItems:'center'
     },
     cardContainer: {
-        borderWidth: 1,
+       
         marginHorizontal:30,
         marginBottom:25,
+        padding:10,
+        backgroundColor:'#fff',
+        shadowColor: "#000000",
+        elevation:5,
+        shadowOpacity: 0.8,
+        shadowRadius: 2,
+        shadowOffset: {
+          height: 1,
+          width: 1
+        }
     },
     cardDetail:{
         flexDirection: 'row'
