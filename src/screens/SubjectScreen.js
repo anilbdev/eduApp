@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Text, StyleSheet, View, TouchableHighlight, FlatList } from 'react-native'
 import { Icon } from 'react-native-elements'
+import {navigationStrings} from '../index'
 const data = [{
     id: 1,
     title: 'Chapter 1',
@@ -77,7 +78,9 @@ export default class SubjectScreen extends Component {
             <View style={styles.container}>
                 <View style={styles.headerContainer}>
                     <View style={styles.backButtonContainer}>
-                        <TouchableHighlight style={{ borderWidth: 1, borderColor: '#fff', borderRadius: 10, padding: 8 }}>
+                        <TouchableHighlight 
+                        onPress={()=>{this.props.navigation.goBack()}}
+                        style={{ borderWidth: 1, borderColor: '#fff', borderRadius: 10, padding: 8 }}>
                             <Icon
                                 color='green'
                                 size={30}
