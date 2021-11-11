@@ -7,6 +7,7 @@ export {default as Profile} from './screens/Tab/Profile'
 export {default as Exams} from './screens/Tab/Exams'
 export {default as Contact} from './screens/Tab/Contact'
 export {default as SubjectScreen} from './screens/SubjectScreen'
+export {default as ChapterScreen } from './screens/ChapterScreen'
 //Drawer-screen//
 export {default as ExamCorner} from './screens/Drawer/ExamCorner'
 export {default as Subscription} from './screens/Drawer/Subscription'

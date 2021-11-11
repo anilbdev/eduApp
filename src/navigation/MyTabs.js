@@ -15,7 +15,7 @@ import { color } from 'react-native-elements/dist/helpers';
 const Tab = createBottomTabNavigator();
 function MyTabs(props) {
   return (
-    <NavigationContainer>
+    
       <Tab.Navigator
         screenOptions={{
           tabBarStyle: {
@@ -88,7 +88,7 @@ function MyTabs(props) {
           }}
         />
       </Tab.Navigator>
-    </NavigationContainer>
+   
   );
 }
 const styles = StyleSheet.create({
