@@ -36,7 +36,20 @@ const data = [{
     title: 'Chapter 6',
     part: 4,
     hour: 7
-}]
+},
+{
+    id: 7,
+    title: 'Chapter 7',
+    part: 4,
+    hour: 7
+},
+{
+    id: 8,
+    title: 'Chapter 8',
+    part: 4,
+    hour: 7
+}
+]
 const renderItem = ({ item }) => (
     <View style={styles.cardContainer}>
         <Text style={{ fontSize: 23 }} >{item.title}</Text>
@@ -99,6 +112,7 @@ export default class SubjectScreen extends Component {
                         data={data}
                         keyExtractor={(item) => item.id}
                         renderItem={renderItem}
+                        
                     />
                 </View>
             </View>
@@ -108,14 +122,15 @@ export default class SubjectScreen extends Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+    
 
     },
     headerContainer: {
-        borderWidth: 3,
+       
         backgroundColor: '#00202f',
     },
     mainBodyContainer: {
-        borderWidth: 2
+        flex:1
     },
     backButtonContainer: {
         flexDirection: 'row',
