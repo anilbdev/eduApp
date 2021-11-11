@@ -17,10 +17,11 @@ export default class ChapterTab extends Component {
                 <Tab.Navigator
                     screenOptions={{
                         tabBarLabelStyle: {
-                            fontSize: 9,
+                            fontSize: 11,
+                            color:'#6f838e'
                         },
                         tabBarStyle: {
-                            backgroundColor: 'red'
+                            backgroundColor: '#00202f'
                         },
                         
                     }}
