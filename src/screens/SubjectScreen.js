@@ -4,48 +4,56 @@ import { Icon } from 'react-native-elements'
 const data = [{
     id: 1,
     title: 'Chapter 1',
-    part: 2
+    part: 2,
+    hour:3
 },
 {
     id: 2,
     title: 'Chapter 2',
-    part: 2
+    part: 2,
+    hour:2
 },
 {
     id: 3,
     title: 'Chapter 3',
-    part: 3
+    part: 3,
+    hour:5
 },
 {
     id: 4,
     title: 'Chapter 4',
-    part: 8
+    part: 8,
+    hour:8
 },
 {
     id: 5,
     title: 'Chapter 5',
-    part: 5
+    part: 5,
+    hour:6
 },
 {
     id: 6,
     title: 'Chapter 6',
-    part: 4
+    part: 4,
+    hour:7
 }]
 const renderItem = ({ item }) => (
     <View style={styles.cardContainer}>
-        <Text style={{ fontSize: 23 }} >Biology</Text>
+        <Text style={{ fontSize: 23 }} >{item.title}</Text>
         <View style={styles.cardDetail} >
             <View style={styles.cardChapterSummary}>
                 <Icon
-                    name='circle'
+                    size={17}
+                    name='radio-button-checked'
                 />
-                <Text>Chapters</Text>
+                <Text style={{fontSize:17,marginLeft:5}} >{item.part} Chapters</Text>
             </View>
-            <View style={styles.hourSummary}>
+            <View style={styles.cardHourSummary}>
                 <Icon
-                    name='circle'
+                    size={17}
+                    name='radio-button-checked'
                 />
-                <Text>Hours</Text>
+                <Text style={{fontSize:17,marginLeft:5}}>{item.hour} Hours</Text>
             </View>
         </View>
     </View>
@@ -112,22 +120,28 @@ const styles = StyleSheet.create({
         flexDirection: 'row'
     },
     chapterSummary: {
-        flexDirection: 'row'
+        flexDirection: 'row',
+        alignItems:'center'
     },
     hourSummary: {
-        flexDirection: 'row'
+        flexDirection: 'row',
+        alignItems:'center'
     },
     cardContainer: {
-        borderWidth: 1
+        borderWidth: 1,
+        marginHorizontal:30,
+        marginBottom:25,
     },
     cardDetail:{
         flexDirection: 'row'
     },
     cardChapterSummary: {
-        flexDirection: 'row'
+        flexDirection: 'row',
+        alignItems:'center'
     },
     cardHourSummary: {
-        flexDirection: 'row'
+        flexDirection: 'row',
+        alignItems:'center',
+        marginLeft:15
     },
-
 })
