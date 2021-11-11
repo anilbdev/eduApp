@@ -64,14 +64,16 @@ export default class SubjectScreen extends Component {
             <View style={styles.container}>
                 <View style={styles.headerContainer}>
                     <View style={styles.backButtonContainer}>
-                        <TouchableHighlight>
+                        <TouchableHighlight style={{ borderWidth: 1, borderColor: '#fff', borderRadius: 10, padding: 8 }}>
                             <Icon
-                                name='circle'
+                                color='green'
+                                size={30}
+                                name='chevron-left'
                             />
                         </TouchableHighlight>
                     </View>
                     <View style={styles.subjectNameContainer}>
-                        <Text style={{ fontSize: 32, color: '#fff',marginBottom:5 }} >Biology</Text>
+                        <Text style={{ fontSize: 32, color: '#fff', marginBottom: 5 }} >Biology</Text>
                         <View style={styles.subjectDetailContainer} >
                             <View style={styles.chapterSummary}>
                                 <Icon
@@ -106,22 +108,23 @@ export default class SubjectScreen extends Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        borderWidth: 3
+
     },
     headerContainer: {
         borderWidth: 3,
-        backgroundColor: 'grey'
+        backgroundColor: '#00202f',
     },
     mainBodyContainer: {
         borderWidth: 2
     },
     backButtonContainer: {
-        borderWidth: 5,
-        flexDirection: 'row'
+        flexDirection: 'row',
+        marginHorizontal: 30,
+        marginTop: 15
     },
     subjectNameContainer: {
         marginHorizontal: 30,
-        paddingVertical:40
+        paddingVertical: 40
     },
     subjectDetailContainer: {
         flexDirection: 'row'
