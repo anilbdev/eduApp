@@ -7,7 +7,7 @@ export {default as Profile} from './screens/Tab/Profile'
 export {default as Exams} from './screens/Tab/Exams'
 export {default as Contact} from './screens/Tab/Contact'
 export {default as SubjectScreen} from './screens/SubjectScreen'
-export {default as ChapterScreen } from './screens/ChapterScreen'
+
 //Drawer-screen//
 export {default as ExamCorner} from './screens/Drawer/ExamCorner'
 export {default as Subscription} from './screens/Drawer/Subscription'
@@ -18,7 +18,11 @@ export {default as Referals} from './screens/Drawer/Referals'
 export {default as ShareApp} from './screens/Drawer/ShareApp'
 export {default as LogOut} from './screens/Drawer/LogOut'
 export {default as DrawerContent} from './screens/Drawer/DrawerContent'
-
+//ChapterTab-Screen//
+export {default as Videos } from './screens/ChapterTab/Videos'
+export {default as Resources } from './screens/ChapterTab/Resources'
+export {default as QnBank } from './screens/ChapterTab/QnBank'
+export {default as ChapterTest } from './screens/ChapterTab/ChapterTest'
 
 
 

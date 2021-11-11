@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import { Text, StyleSheet, View } from 'react-native'
 
-export default class ChapterScreen extends Component {
+export default class Videos extends Component {
     render() {
         return (
             <View>
-                <Text> Chapter screen </Text>
+                <Text> VIdeos </Text>
             </View>
         )
     }
