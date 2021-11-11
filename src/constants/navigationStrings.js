@@ -17,6 +17,11 @@ export default{
     LOGOUT:'Log Out',
     MYDRAWER:'MyDrawer',
     SUBJECT_SCREEN:'Subject Screen',
-    HOME_STACK:'Home_Stack'
+    HOME_STACK:'Home_Stack',
+    CHAPTER_TAB:'Chapter Tab',
+    VIDEOS:'Vidoes',
+    CHAPTER_TEST:'Chapter Test',
+    QN_BANK:'Qn Bank',
+    RESOURCES:'Resources'
 
 }
