@@ -11,7 +11,7 @@ export default class SelectSubject extends Component {
                     showsHorizontalScrollIndicator={false}
                 >
                     <View style={styles.buttonStyle}>
-                        <ItemButton />
+                        <ItemButton {...this.props} />
                     </View>
                     <View style={styles.buttonStyle}>
                         <ItemButton />

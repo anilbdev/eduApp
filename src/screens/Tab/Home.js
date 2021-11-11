@@ -27,7 +27,7 @@ export default class Home extends Component {
                         <SelectClass />
                     </View>
                     <View style={styles.selectSubjectContainer}>
-                        <SelectSubject />
+                        <SelectSubject {...this.props} />
                     </View>
                     <View style={styles.recentCourseContainer}>
                         <RecentCourse />

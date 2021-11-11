@@ -1,12 +1,15 @@
 import React, { Component } from 'react'
 import { Text, StyleSheet, View, TouchableHighlight } from 'react-native'
 import { Icon } from 'react-native-elements/dist/icons/Icon'
+import{navigationStrings} from '../../index'
 export default class ItemButton extends Component {
     render() {
         const isActive=true
         return (
             <View style={styles.container} >
-                <TouchableHighlight style={styles.itemButtonStyle}>
+                <TouchableHighlight 
+                onPress={()=>{this.props.navigation.navigate(navigationStrings.SUBJECT_SCREEN)}}
+                style={styles.itemButtonStyle}>
                     <View style={{ flexDirection: 'row', alignItems: "center", }}>
                         <Icon
                             name='circle'                            
