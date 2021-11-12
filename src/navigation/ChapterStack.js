@@ -17,7 +17,7 @@ export default class ChapterStack extends Component {
                 <Stack.Navigator
                 screenOptions={{
                     header:()=>(
-                        <ChapterHeader/>
+                        <ChapterHeader {...this.props} />
                     )
                 }}
                 >
