@@ -8,7 +8,7 @@ export default class ItemButton extends Component {
         return (
             <View style={styles.container} >
                 <TouchableHighlight 
-                onPress={()=>{this.props.navigation.navigate(navigationStrings.SUBJECT_SCREEN)}}
+                onPress={()=>{this.props.navigation.navigate(navigationStrings.SUBJECT_SCREEN_STACK)}}
                 style={styles.itemButtonStyle}>
                     <View style={{ flexDirection: 'row', alignItems: "center", }}>
                         <Icon

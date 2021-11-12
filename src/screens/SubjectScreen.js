@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Text, StyleSheet, View, TouchableHighlight, FlatList } from 'react-native'
 import { Icon } from 'react-native-elements'
-import {navigationStrings} from '../index'
+import { navigationStrings } from '../index'
 const data = [{
     id: 1,
     title: 'Chapter 1',
@@ -51,36 +51,50 @@ const data = [{
     hour: 7
 }
 ]
-const renderItem = ({ item }) => (
-    <View style={styles.cardContainer}>
-        <Text style={{ fontSize: 23 }} >{item.title}</Text>
-        <View style={styles.cardDetail} >
-            <View style={styles.cardChapterSummary}>
-                <Icon
-                    size={17}
-                    name='radio-button-checked'
-                />
-                <Text style={{ fontSize: 13, marginLeft: 5 }} >{item.part} Chapters</Text>
-            </View>
-            <View style={styles.cardHourSummary}>
-                <Icon
-                    size={17}
-                    name='radio-button-checked'
-                />
-                <Text style={{ fontSize: 13, marginLeft: 5 }}>{item.hour} Hours</Text>
-            </View>
-        </View>
-    </View>
-)
+
 export default class SubjectScreen extends Component {
+    itemClick = () => {
+       
+        this.props.navigation.navigate(navigationStrings.CHAPTER_STACK)
+    }
+
+    renderItem = ({ item }) => {
+    
+        return (
+            <TouchableHighlight
+            onPress={() => this.itemClick(item)}
+            >
+                <View style={styles.cardContainer}>
+                    <Text style={{ fontSize: 23 }} >{item.title}</Text>
+                    <View style={styles.cardDetail} >
+                        <View style={styles.cardChapterSummary}>
+                            <Icon
+                                size={17}
+                                name='radio-button-checked'
+                            />
+                            <Text style={{ fontSize: 13, marginLeft: 5 }} >{item.part} Chapters</Text>
+                        </View>
+                        <View style={styles.cardHourSummary}>
+                            <Icon
+                                size={17}
+                                name='radio-button-checked'
+                            />
+                            <Text style={{ fontSize: 13, marginLeft: 5 }}>{item.hour} Hours</Text>
+                        </View>
+                    </View>
+                </View>
+            </TouchableHighlight>
+        )
+    }
     render() {
+        console.log('render function>>>>', this.props.navigation)
         return (
             <View style={styles.container}>
                 <View style={styles.headerContainer}>
                     <View style={styles.backButtonContainer}>
-                        <TouchableHighlight 
-                        onPress={()=>{this.props.navigation.goBack()}}
-                        style={{ borderWidth: 1, borderColor: '#fff', borderRadius: 10, padding: 8 }}>
+                        <TouchableHighlight
+                            onPress={() => { this.props.navigation.goBack() }}
+                            style={{ borderWidth: 1, borderColor: '#fff', borderRadius: 10, padding: 8 }}>
                             <Icon
                                 color='green'
                                 size={30}
@@ -114,8 +128,7 @@ export default class SubjectScreen extends Component {
                     <FlatList
                         data={data}
                         keyExtractor={(item) => item.id}
-                        renderItem={renderItem}
-                        
+                        renderItem={this.renderItem}
                     />
                 </View>
             </View>
@@ -125,15 +138,12 @@ export default class SubjectScreen extends Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-    
-
     },
     headerContainer: {
-       
         backgroundColor: '#00202f',
     },
     mainBodyContainer: {
-        flex:1
+        flex: 1
     },
     backButtonContainer: {
         flexDirection: 'row',

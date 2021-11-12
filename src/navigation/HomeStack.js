@@ -23,7 +23,7 @@ export default class HomeStack extends Component {
                 component={Home}
                 />
                  <Stack.Screen 
-                name={navigationStrings.SUBJECT_SCREEN}
+                name={navigationStrings.SUBJECT_SCREEN_STACK}
                 component={SubjectScreenStack}
                 />
             </Stack.Navigator>
