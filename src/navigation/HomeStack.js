@@ -14,7 +14,7 @@ const Stack = createNativeStackNavigator();
 export default class HomeStack extends Component {
     render() {
         return (
-            <NavigationContainer>
+            // <NavigationContainer>
             <Stack.Navigator
             screenOptions={{headerShown:false}}
             >
@@ -27,7 +27,7 @@ export default class HomeStack extends Component {
                 component={SubjectScreenStack}
                 />
             </Stack.Navigator>
-            </NavigationContainer>
+            // </NavigationContainer>
         )
     }
 }

@@ -91,7 +91,7 @@ export default class SubjectScreen extends Component {
         )
     }
     render() {
-        console.log('render function>>>>', this.props.navigation)
+        
         return (
             <View style={styles.container}>
                 <View style={styles.headerContainer}>
