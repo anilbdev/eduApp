@@ -23,6 +23,7 @@ export {default as Videos } from './screens/ChapterTab/Videos'
 export {default as Resources } from './screens/ChapterTab/Resources'
 export {default as QnBank } from './screens/ChapterTab/QnBank'
 export {default as ChapterTest } from './screens/ChapterTab/ChapterTest'
+export {default as VideoDetail} from './screens/ChapterTab/VideoDetail/VideoDetail'
 
 
 
