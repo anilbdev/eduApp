@@ -53,9 +53,13 @@ const data = [{
 ]
 
 export default class SubjectScreen extends Component {
-    itemClick = () => {
+    itemClick = (item) => {
        
-        this.props.navigation.navigate(navigationStrings.CHAPTER_STACK)
+       if(item.id == 1){
+           return  this.props.navigation.navigate(navigationStrings.CHAPTER_STACK)
+       }else{
+           return alert('Yet to update')
+       }
     }
 
     renderItem = ({ item }) => {
