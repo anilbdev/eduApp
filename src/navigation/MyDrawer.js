@@ -13,7 +13,8 @@ import {
   ShareApp,
   LogOut,
   navigationStrings,
-  DrawerContent
+  DrawerContent,
+  HomeStack
 
 } from '../index'
 const Drawer = createDrawerNavigator();
@@ -27,8 +28,8 @@ function MyDrawer() {
         }}
       >
         <Drawer.Screen
-          name={navigationStrings.MYTABS}
-          component={MyTabs}
+          name={navigationStrings.HOME_STACK}
+          component={HomeStack}
           options={{
             drawerLabel: () => null,
             title: null,

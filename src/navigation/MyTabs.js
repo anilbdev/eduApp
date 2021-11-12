@@ -5,6 +5,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Icon } from 'react-native-elements';
 import {
   HomeStack,
+  Home,
   Recent,
   Exams,
   Profile,
@@ -32,8 +33,8 @@ function MyTabs(props) {
         }}
       >
         <Tab.Screen
-          name={navigationStrings.HOME_STACK}
-          component={HomeStack}
+          name={navigationStrings.HOME}
+          component={Home}
           options={{
             tabBarActiveTintColor: '#00c458',
             tabBarInactiveTintColor: '#c8c8c8',

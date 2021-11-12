@@ -4,6 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import {
     Home,
+    MyTabs,
     SubjectScreen,
     navigationStrings,
     SubjectScreenStack
@@ -19,8 +20,8 @@ export default class HomeStack extends Component {
             screenOptions={{headerShown:false}}
             >
                 <Stack.Screen 
-                name={navigationStrings.HOME}
-                component={Home}
+                name={navigationStrings.MYTABS}
+                component={MyTabs}
                 />
                  <Stack.Screen 
                 name={navigationStrings.SUBJECT_SCREEN_STACK}
