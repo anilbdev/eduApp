@@ -13,7 +13,7 @@ const Stack = createNativeStackNavigator();
 export default class ChapterStack extends Component {
     render() {
         return (
-            <NavigationContainer>
+           
                 <Stack.Navigator
                 screenOptions={{
                     header:()=>(
@@ -23,7 +23,7 @@ export default class ChapterStack extends Component {
                 >
                     <Stack.Screen name={navigationStrings.CHAPTER_TAB} component={ChapterTab}/>
                 </Stack.Navigator>
-            </NavigationContainer>
+          
         )
     }
 }

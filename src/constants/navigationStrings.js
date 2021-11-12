@@ -22,6 +22,8 @@ export default{
     VIDEOS:'Vidoes',
     CHAPTER_TEST:'Chapter Test',
     QN_BANK:'Qn Bank',
-    RESOURCES:'Resources'
+    RESOURCES:'Resources',
+    SUBJECT_SCREEN_STACK:'Subject Screen Stack',
+    CHAPTER_STACK:'Chapter Stack'
 
 }

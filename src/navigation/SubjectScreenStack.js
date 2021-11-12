@@ -3,33 +3,21 @@ import { Text, StyleSheet, View } from 'react-native'
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import {
-    Home,
     SubjectScreen,
     navigationStrings,
-    SubjectScreenStack
+    ChapterStack
 } from '../index'
-
 const Stack = createNativeStackNavigator();
-
-export default class HomeStack extends Component {
+export default class SubjectScreenStack extends Component {
     render() {
         return (
-            <NavigationContainer>
             <Stack.Navigator
-            screenOptions={{headerShown:false}}
+                screenOptions={{ headerShown: false }}
             >
-                <Stack.Screen 
-                name={navigationStrings.HOME}
-                component={Home}
-                />
-                 <Stack.Screen 
-                name={navigationStrings.SUBJECT_SCREEN}
-                component={SubjectScreenStack}
-                />
+                <Stack.Screen name={navigationStrings.SUBJECT_SCREEN} component={SubjectScreen} />
+                <Stack.Screen name={navigationStrings.CHAPTER_STACK} component={ChapterStack} />
             </Stack.Navigator>
-            </NavigationContainer>
         )
     }
 }
-
 const styles = StyleSheet.create({})
