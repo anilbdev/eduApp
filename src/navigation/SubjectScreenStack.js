@@ -5,7 +5,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import {
     SubjectScreen,
     navigationStrings,
-    ChapterStack
+    ChapterStack,VideoDetail
 } from '../index'
 const Stack = createNativeStackNavigator();
 export default class SubjectScreenStack extends Component {
@@ -16,6 +16,7 @@ export default class SubjectScreenStack extends Component {
             >
                 <Stack.Screen name={navigationStrings.SUBJECT_SCREEN} component={SubjectScreen} />
                 <Stack.Screen name={navigationStrings.CHAPTER_STACK} component={ChapterStack} />
+                <Stack.Screen name={navigationStrings.VIDEO_DETAIL} component={VideoDetail} />
             </Stack.Navigator>
         )
     }

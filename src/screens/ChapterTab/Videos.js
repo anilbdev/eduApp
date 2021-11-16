@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
-import { Text, StyleSheet, View, FlatList, Image } from 'react-native'
+import { Text, StyleSheet, View, FlatList, Image, TouchableHighlight } from 'react-native'
 import { Icon } from 'react-native-elements'
+import {
+    navigationStrings,
+} from '../../index'
 const data = [{
     id: 1,
     title: 'Chapter 1',
@@ -58,51 +61,66 @@ const data = [{
     imageUrl: 'https://images.pexels.com/photos/10012587/pexels-photo-10012587.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
 }
 ]
-const renderItem = ({ item }) => (
-    <View style={styles.cardContainer}>
-        <View style={styles.cardImageContainer}>
-            <Image
-                source={{ uri: item.imageUrl }}
-                style={styles.cardImage}
-            />
-        </View>
-        <View style={styles.cardDescContainer}>
-            <Text style={{ fontSize: 25, color: '#000', marginBottom: 5 }} >{item.title}</Text>
-            <View style={styles.subjectDetailContainer} >
-                <View style={styles.chapterSummary}>
-                    <Icon
-                        color='#9f9f9f'
-                        size={17}
-                        name='radio-button-checked'
+export default class Videos extends Component {
+    itemClick = (item) => {
+        if (item.id == 1) {
+            return this.props.navigation.navigate(navigationStrings.VIDEO_DETAIL)
+        } else {
+            return alert('Yet to update')
+        }
+    }
+    renderItem = ({ item }) => (
+        <TouchableHighlight
+        style={styles.cardContainer}
+        onPress={()=>this.itemClick(item)}
+        >
+            <View >
+                <View style={styles.cardImageContainer}>
+                    <Image
+                        source={{ uri: item.imageUrl }}
+                        style={styles.cardImage}
                     />
-                    <Text style={{ fontSize: 13, marginLeft: 5, color: '#9f9f9f' }} >{item.part} Chapters</Text>
                 </View>
-                <View style={styles.hourSummary}>
-                    <Icon
-                        color='#9f9f9f'
-                        size={17}
-                        name='radio-button-checked'
-                    />
-                    <Text style={{ fontSize: 13, marginLeft: 5, color: '#9f9f9f' }} >{item.hour} Hours</Text>
+                <View style={styles.cardDescContainer}>
+                    <Text style={{ fontSize: 25, color: '#000', marginBottom: 5 }} >{item.title}</Text>
+                    <View style={styles.subjectDetailContainer} >
+                        <View style={styles.chapterSummary}>
+                            <Icon
+                                color='#9f9f9f'
+                                size={17}
+                                name='radio-button-checked'
+                            />
+                            <Text style={{ fontSize: 13, marginLeft: 5, color: '#9f9f9f' }} >{item.part} Chapters</Text>
+                        </View>
+                        <View style={styles.hourSummary}>
+                            <Icon
+                                color='#9f9f9f'
+                                size={17}
+                                name='radio-button-checked'
+                            />
+                            <Text style={{ fontSize: 13, marginLeft: 5, color: '#9f9f9f' }} >{item.hour} Hours</Text>
+                        </View>
+                    </View>
                 </View>
             </View>
-        </View>
-    </View>
-)
-export default class Videos extends Component {
+        </TouchableHighlight>
+    )
     render() {
         return (
             <View style={styles.container}>
                 <FlatList
                     data={data}
                     keyExtractor={(item) => item.id}
-                    renderItem={renderItem}
+                    renderItem={this.renderItem}
                 />
             </View>
         )
     }
 }
 const styles = StyleSheet.create({
+    container:{
+        flex:1
+    },
     cardContainer: {
         flex: 1,
         marginBottom: 30,
@@ -118,7 +136,7 @@ const styles = StyleSheet.create({
             height: 1,
             width: 1
         },
-        borderRadius:10
+        borderRadius: 10
     },
     cardImageContainer: {
         alignItems: 'center'

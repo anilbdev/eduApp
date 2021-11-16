@@ -23,6 +23,10 @@ export {default as Videos } from './screens/ChapterTab/Videos'
 export {default as Resources } from './screens/ChapterTab/Resources'
 export {default as QnBank } from './screens/ChapterTab/QnBank'
 export {default as ChapterTest } from './screens/ChapterTab/ChapterTest'
+
+
+//Videostack//
+
 export {default as VideoDetail} from './screens/ChapterTab/VideoDetail/VideoDetail'
 
 
@@ -73,3 +77,4 @@ export {default as HomeStack} from './navigation/HomeStack'
 export {default as ChapterTab} from './navigation/ChapterTab'
 export {default as ChapterStack} from './navigation/ChapterStack'
 export {default as SubjectScreenStack} from './navigation/SubjectScreenStack'
+export {default as VideoStack } from './navigation/VideoStack'

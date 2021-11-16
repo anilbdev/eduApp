@@ -5,6 +5,7 @@ import { createMaterialTopTabNavigator } from '@react-navigation/material-top-ta
 import {
     navigationStrings,
     Videos,
+    VideoStack,
     ChapterTest,
     QnBank,
     Resources,
@@ -24,7 +25,7 @@ export default class ChapterTab extends Component {
                     },
                 }}
             >
-                <Tab.Screen name={navigationStrings.VIDEOS} component={Videos} />
+                <Tab.Screen name={navigationStrings.VIDEO_STACK} component={VideoStack} />
                 <Tab.Screen name={navigationStrings.CHAPTER_TEST} component={ChapterTest} />
                 <Tab.Screen name={navigationStrings.RESOURCES} component={Resources} />
                 <Tab.Screen name={navigationStrings.QN_BANK} component={QnBank} />

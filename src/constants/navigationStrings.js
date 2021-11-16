@@ -24,6 +24,8 @@ export default{
     QN_BANK:'Qn Bank',
     RESOURCES:'Resources',
     SUBJECT_SCREEN_STACK:'Subject Screen Stack',
-    CHAPTER_STACK:'Chapter Stack'
+    CHAPTER_STACK:'Chapter Stack',
+    VIDEO_STACK:'Video Stack',
+    VIDEO_DETAIL:'Video Detail'
 
 }
