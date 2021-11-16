@@ -16,15 +16,15 @@ export default class VideoDetail extends Component {
                     </View>
                     <View style={styles.videoSectionHeading}>
                         <View style={styles.videoSectionHeadingTitle}>
-                            <Text style={{ fontSize: 25 }}>Long Chapter name</Text>
+                            <Text style={{ fontSize: 25,color:'#fff' }}>Long Chapter name</Text>
                         </View>
                         <View style={styles.videoSectionHeadingIcon}>
                             <Icon
                                 name='file-download'
                                 size={35}
-                                color='red'
+                                color='#fff'
                             />
-                            <Text>Download</Text>
+                            <Text style={{color:'#fff'}}>Download</Text>
                         </View>
                     </View>
                     <View style={styles.videoSectionDesc}>
@@ -32,8 +32,9 @@ export default class VideoDetail extends Component {
                             <View style={{ flexDirection: 'row', justifyContent: 'center' }} >
                                 <Icon
                                     name='navigate-before'
+                                    color='#fff'
                                 />
-                                <Text style={{ marginLeft: 5 }} >Previous</Text>
+                                <Text style={{ marginLeft: 5,color:'#fff' }} >Previous</Text>
                             </View>
                         </View>
                         <View style={styles.videoSectionDescCenter}>
@@ -47,9 +48,10 @@ export default class VideoDetail extends Component {
                         </View>
                         <View style={styles.videoSectionDescRight}>
                             <View style={{ flexDirection: 'row', justifyContent: 'center' }} >
-                                <Text style={{ marginLeft: 5 }} >Next</Text>
+                                <Text style={{ marginLeft: 5,color:'#fff' }} >Next</Text>
                                 <Icon
                                     name='keyboard-arrow-right'
+                                    color='#fff'
                                 />
                             </View>
                         </View>
@@ -58,14 +60,13 @@ export default class VideoDetail extends Component {
                 <View style={styles.contactSection}>
                     <View style={styles.contactSectionMessage}>
                         <View>
-                            <Text style={{ fontSize: 14 }}>Your simple Question can be asked here {"\n"}  no matter how long</Text>
+                            <Text style={{ fontSize: 14,color:'#fff' }}>Your simple Question can be asked here {"\n"} no matter how long</Text>
                         </View>
                         <Avatar
                             rounded
                             size={50}
                             source={{
-                                uri:
-                                    '#',
+                                uri:'https://cdn.pixabay.com/photo/2016/08/20/05/38/avatar-1606916_960_720.png',
                             }}
                         />
                     </View>
@@ -107,19 +108,22 @@ export default class VideoDetail extends Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
+        backgroundColor:'#00202f'
     },
     videoSection: {
-        borderWidth: 2
+       
     },
     contactSection: {
-        borderWidth: 2
+        
     },
     videoSectionVideo: {},
     videoSectionHeading: {
-        borderWidth: 2,
+        
         flexDirection: 'row',
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
+        paddingVertical:15,
+        paddingHorizontal:10
     },
     videoSectionHeadingTitle: {
         justifyContent: 'center',
@@ -127,21 +131,37 @@ const styles = StyleSheet.create({
     videoSectionHeadingIcon: {},
     videoSectionDesc: {
         flexDirection: 'row',
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
+        borderTopWidth:1,
+        borderTopColor:'#c1cacd',
+        borderBottomWidth:1,
+        borderBottomColor:'#c1cacd',
+        paddingVertical:15
+        
     },
     videoSectionDescLeft: {},
     videoSectionDescCenter: {},
     videoSectionDescRight: {},
     contactSection: {},
     contactSectionMessage: {
-        borderWidth: 3,
+       
         flexDirection: 'row',
-        alignItems: 'flex-start'
+        alignItems: 'flex-start',
+        backgroundColor:'#000000',
+        padding:10,
+        margin:10,
+        borderRadius:10
     },
     contactSectionInput: {
         flexDirection: 'row',
         justifyContent: 'space-between',
-        backgroundColor: '#072d40'
+        backgroundColor: '#072d40',
+        padding:10,
+        margin:10,
+        borderRadius:10
     },
-    contactSectionButton: {}
+    contactSectionButton: {
+        
+        margin:10
+    }
 })
