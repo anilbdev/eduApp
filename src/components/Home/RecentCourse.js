@@ -2,11 +2,11 @@ import React, { Component } from 'react'
 import { Text, StyleSheet, View, ImageBackground, FlatList, Alert, Image } from 'react-native'
 import Icon from 'react-native-vector-icons/MaterialIcons'
 const data = [
-    { id: '1', url: 'https://images.pexels.com/photos/9025296/pexels-photo-9025296.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940' },
-    { id: '2', url: 'https://images.pexels.com/photos/9651391/pexels-photo-9651391.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260' },
-    { id: '3', url: 'https://images.pexels.com/photos/3750270/pexels-photo-3750270.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' },
-    { id: '4', url: 'https://images.pexels.com/photos/3989737/pexels-photo-3989737.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' },
-    { id: '5', url: 'https://images.pexels.com/photos/70741/cereals-field-ripe-poppy-70741.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' }
+    { id: '1',name:'Biology', url: 'https://images.pexels.com/photos/9025296/pexels-photo-9025296.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940' },
+    { id: '2',name:'Chemistry', url: 'https://images.pexels.com/photos/9651391/pexels-photo-9651391.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260' },
+    { id: '3',name:'Physics', url: 'https://images.pexels.com/photos/3750270/pexels-photo-3750270.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' },
+    { id: '4',name:'English', url: 'https://images.pexels.com/photos/3989737/pexels-photo-3989737.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' },
+    { id: '5',name:'Biology', url: 'https://images.pexels.com/photos/70741/cereals-field-ripe-poppy-70741.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' }
 ]
 renderSeparator = () => {
     return (
@@ -30,7 +30,7 @@ renderItem = ({ item }) => {
                         style={{ color: 'white' }}
                         size={25}
                     />
-                    <Text style={styles.imageText}>Hello</Text>
+                    <Text style={styles.imageText}>{item.name}</Text>
                 </View>
             </ImageBackground>
         </View>
