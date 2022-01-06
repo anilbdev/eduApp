@@ -7,10 +7,10 @@ import TestClass from './src/test/TestClass';
 const App = () => {
   return (
     <SafeAreaProvider>
-      {/* <Routes /> */}
+      <Routes />
       {/* <Videos/> */}
       {/* <VideoDetail/> */}
-    <Home/>
+    {/* <Home/> */}
     </SafeAreaProvider>
   )
 }

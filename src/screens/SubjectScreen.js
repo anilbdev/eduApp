@@ -69,7 +69,7 @@ export default class SubjectScreen extends Component {
             onPress={() => this.itemClick(item)}
             >
                 <View style={styles.cardContainer}>
-                    <Text style={{ fontSize: 23 }} >{item.title}</Text>
+                    <Text style={{ fontSize: 20 }} >{item.title}</Text>
                     <View style={styles.cardDetail} >
                         <View style={styles.cardChapterSummary}>
                             <Icon

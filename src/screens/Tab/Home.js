@@ -1,11 +1,6 @@
 import React, { Component } from 'react'
 import { Text, StyleSheet, View, ScrollView } from 'react-native'
-import {
-    widthPercentageToDP as wp,
-    heightPercentageToDP as hp,
-    listenOrientationChange as lor,
-    removeOrientationListener as rol
-  } from 'react-native-responsive-screen';
+
 import {
     Header,
     HomeMessge,
@@ -18,13 +13,7 @@ export default class Home extends Component {
     constructor(props){
         super(props)
     }
-    componentDidMount() {
-        lor(this);
-      }
-      
-      componentWillUnmount() {
-        rol();
-      }
+   
     render() {
        
         return (
