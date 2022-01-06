@@ -80,7 +80,7 @@ export default class Carousal extends Component {
                         layout={"default"}
                         ref={ref => this.carousel = ref}
                         data={this.state.carouselItems}
-                        sliderWidth={350}
+                        sliderWidth={400}
                         itemWidth={300}
                         renderItem={this._renderItem}
                         onSnapToItem={index => this.setState({ activeIndex: index })} />
@@ -98,6 +98,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#002333',
         borderRadius: 15,
         // height: '90%',
+        // marginLeft:-10
     },
     itemHeaderImage: {
         paddingLeft: 30,

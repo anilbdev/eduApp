@@ -17,7 +17,7 @@ export default class Header extends Component {
                     source={require('../../../assets/logo.png')}/>
                 </View>
                 <View style={styles.buttonStyle}>
-                    <ItemButton/>
+                    <ItemButton subjectName={'Plus Two'}/>
                     </View>
             </View>
         )

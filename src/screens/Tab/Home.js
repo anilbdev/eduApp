@@ -50,14 +50,16 @@ const styles = StyleSheet.create({
         paddingLeft: 15,
     },
     selectClassContainer: {
+        marginLeft:-15
     },
     selectSubjectContainer: {
-        paddingLeft: 15,
+        paddingLeft: 5,
     },
     recentCourseContainer: {
         paddingLeft: 15,
     },
     classSliderContainer: {
-        marginBottom:65
+        marginBottom:65,
+        marginLeft:-33
     }
 })
