@@ -1,7 +1,13 @@
 import React, { Component } from 'react'
-import { Text, StyleSheet, View } from 'react-native'
+import { Text, StyleSheet, View,Dimensions  } from 'react-native'
 import Carousel from 'react-native-snap-carousel';
 import { Avatar } from 'react-native-elements';
+import {
+    widthPercentageToDP as wp,
+    heightPercentageToDP as hp,
+    listenOrientationChange as lor,
+    removeOrientationListener as rol
+  } from 'react-native-responsive-screen';
 import{Button} from '../../index'
 
 export default class Carousal extends Component {
@@ -49,6 +55,13 @@ export default class Carousal extends Component {
             ]
         }
     }
+    componentDidMount() {
+        lor(this);
+      }
+      
+      componentWillUnmount() {
+        rol();
+      }
     _renderItem({ item, index }) {
         
         return (
@@ -80,8 +93,8 @@ export default class Carousal extends Component {
                         layout={"default"}
                         ref={ref => this.carousel = ref}
                         data={this.state.carouselItems}
-                        sliderWidth={400}
-                        itemWidth={300}
+                        sliderWidth={Dimensions.get('window').width}
+                        itemWidth={Dimensions.get('window').width*.75}
                         renderItem={this._renderItem}
                         onSnapToItem={index => this.setState({ activeIndex: index })} />
                 </View>
