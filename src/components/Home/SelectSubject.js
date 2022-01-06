@@ -11,16 +11,16 @@ export default class SelectSubject extends Component {
                     showsHorizontalScrollIndicator={false}
                 >
                     <View style={styles.buttonStyle}>
-                        <ItemButton {...this.props} />
+                        <ItemButton subjectName='Biology' {...this.props} />
                     </View>
                     <View style={styles.buttonStyle}>
-                        <ItemButton />
+                        <ItemButton subjectName='Biology' />
                     </View>
                     <View style={styles.buttonStyle}>
-                        <ItemButton />
+                        <ItemButton subjectName='Biology' />
                     </View>
                     <View style={styles.buttonStyle}>
-                        <ItemButton />
+                        <ItemButton subjectName='Biology' />
                     </View>
                 </ScrollView>
             </View>

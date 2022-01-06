@@ -16,7 +16,7 @@ export default class ItemButton extends Component {
                             color={isActive ? 'green' : 'black'}
                             size={18}
                         />
-                        <Text style={{fontSize:18,marginLeft:10}}>helloo</Text>
+                        <Text style={{fontSize:15,marginLeft:10}}>{this.props.subjectName}</Text>
                     </View>
                 </TouchableHighlight>
             </View>
