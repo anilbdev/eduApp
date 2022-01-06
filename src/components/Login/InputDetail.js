@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, StyleSheet, View, TextInput } from 'react-native'
+import { Text, StyleSheet, View, TextInput, KeyboardAvoidingView } from 'react-native'
 export default class InputDetail extends Component {
     constructor(props) {
         super(props)
@@ -7,17 +7,22 @@ export default class InputDetail extends Component {
     render() {
         const { content, handlePhoneNumber } = this.props
         return (
-            <View style={styles.container}>
-                <TextInput
-                    value='+91'
-                    style={styles.phoneCountryCode} />
-                <TextInput
-                    placeholder='Mobile number'
-                    placeholderTextColor='#76877a'
-                    value={content.phoneNunmber}
-                    onChangeText={(text) => handlePhoneNumber(text)}
-                    style={styles.phoneNunmber} />
-            </View>
+            <KeyboardAvoidingView
+                behavior={Platform.OS === "ios" ? "padding" : "height"}
+                style={styles}
+            >
+                <View style={styles.container}>
+                    <TextInput
+                        value='+91'
+                        style={styles.phoneCountryCode} />
+                    <TextInput
+                        placeholder='Mobile number'
+                        placeholderTextColor='#76877a'
+                        value={content.phoneNunmber}
+                        onChangeText={(text) => handlePhoneNumber(text)}
+                        style={styles.phoneNunmber} />
+                </View>
+            </KeyboardAvoidingView>
         )
     }
 }

@@ -63,28 +63,30 @@ export class Login extends Component {
     render() {
         console.log('render working>>>>Login');
         return (
-            <View style={styles.conatianer}>
-                <View style={styles.logoImage}>
-                    <Image
-                        style={{ width: '65%' }}
-                        source={require('../../assets/logo.png')} />
-                    <Logo roundLogo={this.state} />
-                </View>
-                <View style={styles.messgaeContainer}>
-                    <Message content={this.state} />
-                </View>
-                <View style={styles.loginConatiner}>
-                    <LoginDetail content={this.state}
-                        handlePhoneNumber={this.handlePhoneNumber}
-                        handleButtonPress={this.handleButtonPress} />
-                </View>
+            <View style={styles.container}>
+             
+                    <View style={styles.logoImage}>
+                        <Image
+                            style={{ width: '65%' }}
+                            source={require('../../assets/logo.png')} />
+                        <Logo roundLogo={this.state} />
+                    </View>
+                    <View style={styles.messgaeContainer}>
+                        <Message content={this.state} />
+                    </View>
+                    <View style={styles.loginConatiner}>
+                        <LoginDetail content={this.state}
+                            handlePhoneNumber={this.handlePhoneNumber}
+                            handleButtonPress={this.handleButtonPress} />
+                    </View>
+                
             </View>
         )
     }
 }
 export default Login
 const styles = StyleSheet.create({
-    conatianer: {
+    container: {
         flex: 1,
     },
     logoImage: {
