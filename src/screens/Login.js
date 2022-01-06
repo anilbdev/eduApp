@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View, Image, StyleSheet } from 'react-native'
+import { Text, View, Image, StyleSheet, ScrollView } from 'react-native'
 import { Message, LoginDetail, Logo } from '../index'
 export class Login extends Component {
     constructor(props) {
@@ -61,10 +61,15 @@ export class Login extends Component {
         })
     }
     render() {
-        console.log('render working>>>>Login');
+
         return (
-            <View style={styles.container}>
-             
+
+          
+                <ScrollView
+                 contentContainerStyle={{
+                    flexGrow:1
+                 }}
+                >
                     <View style={styles.logoImage}>
                         <Image
                             style={{ width: '65%' }}
@@ -79,9 +84,11 @@ export class Login extends Component {
                             handlePhoneNumber={this.handlePhoneNumber}
                             handleButtonPress={this.handleButtonPress} />
                     </View>
-                
-            </View>
-        )
+                </ScrollView>
+               
+                )
+           
+           
     }
 }
 export default Login

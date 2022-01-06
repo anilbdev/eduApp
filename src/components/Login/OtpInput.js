@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, StyleSheet, View,TextInput } from 'react-native'
+import { Text, StyleSheet, View,TextInput,KeyboardAvoidingView } from 'react-native'
 
 
 export default class OtpInput extends Component {
@@ -11,12 +11,17 @@ export default class OtpInput extends Component {
     render() {
         const {placeHolderInput} = this.props
         return (
+            <KeyboardAvoidingView
+            behavior={Platform.OS === "ios" ? "padding" : "height"}
+            
+        >
             <View style={styles.container}>
                 <TextInput 
                 placeholder={placeHolderInput}
                 placeholderTextColor='#76877a'
                 style={styles.phoneNunmber} />
             </View>
+            </KeyboardAvoidingView>
         )
     }
 }
