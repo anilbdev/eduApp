@@ -9,7 +9,7 @@ export default class HomeMessge extends Component {
         return (
             <View style={styles.container}>
                 <Text> Good Morning </Text>
-                <Text style={styles.nameText}> Anil Bhasi </Text>
+                <Text style={styles.nameText}> Harry Potter </Text>
             </View>
         )
     }
