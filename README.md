@@ -11,7 +11,10 @@ An educational app UI created using  react native for android and IOS.
  **Demo video link,** [here](https://www.loom.com/share/53f38286b0ec46d7b51e76e017499cb8)
  **Screen shots**
 
-![enter image description here](https://i.ibb.co/MDC0Lvg/Screenshot-1643025802.jpg)
+ <img src="https://i.ibb.co/MDC0Lvg/Screenshot-1643025802.jpg" width="110" height="220">
+
+
+
 
 ![enter image description here](https://i.ibb.co/CMCq3nG/Screenshot-1643025812.jpg)
 
