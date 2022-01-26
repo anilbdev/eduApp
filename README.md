@@ -11,10 +11,7 @@ An educational app UI created using  react native for android and IOS.
  **Demo video link,** [here](https://www.loom.com/share/53f38286b0ec46d7b51e76e017499cb8)
  **Screen shots**
 
- <img src="https://i.ibb.co/MDC0Lvg/Screenshot-1643025802.jpg" width="110" height="220">
- <img src="https://i.ibb.co/CMCq3nG/Screenshot-1643025812.jpg" width="110" height="220">
- <img src="https://i.ibb.co/vmxNn5S/Screenshot-1643025921.jpg" width="110" height="220">
- <img src="https://i.ibb.co/K27Lfmg/Screenshot-1643025927.jpg" width="110" height="220">
- <img src="https://i.ibb.co/28Ps6fg/Screenshot-1643025950.jpg" width="110" height="220">
- <img src="https://i.ibb.co/Hg4s3Xk/Screenshot-1643025956.jpg" width="110" height="220">
+ <img src="https://i.ibb.co/MDC0Lvg/Screenshot-1643025802.jpg" width="110" height="220"> | <img src="https://i.ibb.co/CMCq3nG/Screenshot-1643025812.jpg" width="110" height="220">
+ <img src="https://i.ibb.co/vmxNn5S/Screenshot-1643025921.jpg" width="110" height="220"> | <img src="https://i.ibb.co/K27Lfmg/Screenshot-1643025927.jpg" width="110" height="220">
+ <img src="https://i.ibb.co/28Ps6fg/Screenshot-1643025950.jpg" width="110" height="220"> | <img src="https://i.ibb.co/Hg4s3Xk/Screenshot-1643025956.jpg" width="110" height="220">
  
