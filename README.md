@@ -16,16 +16,5 @@ An educational app UI created using  react native for android and IOS.
  <img src="https://i.ibb.co/vmxNn5S/Screenshot-1643025921.jpg" width="110" height="220">
  <img src="https://i.ibb.co/K27Lfmg/Screenshot-1643025927.jpg" width="110" height="220">
  <img src="https://i.ibb.co/28Ps6fg/Screenshot-1643025950.jpg" width="110" height="220">
-
-
-
-
-
-
-
-
-
-
-
-![enter image description here](https://i.ibb.co/Hg4s3Xk/Screenshot-1643025956.jpg)
+ <img src="https://i.ibb.co/Hg4s3Xk/Screenshot-1643025956.jpg" width="110" height="220">
  
